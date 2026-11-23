@@ -1,0 +1,1328 @@
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- helpers ---------- */
+  var $ = function (id) { return document.getElementById(id); };
+  var clamp = function (n, a, b) { return Math.max(a, Math.min(b, n)); };
+  var clone = function (o) { return JSON.parse(JSON.stringify(o)); };
+  var esc = function (s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  };
+  var pkr = function (n) { return "PKR " + Math.round(n).toLocaleString("en-GB"); };
+  var num = function (n) { return Math.round(n).toLocaleString("en-GB"); };
+  var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  function toDate(iso) {
+    if (!iso) return null;
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+    if (!m) return null;
+    return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+  }
+  function isoOf(d) {
+    return d.getUTCFullYear() + "-" + String(d.getUTCMonth() + 1).padStart(2, "0") + "-" + String(d.getUTCDate()).padStart(2, "0");
+  }
+  function addMonths(iso, n) {
+    var d = toDate(iso);
+    var day = d.getUTCDate();
+    d.setUTCDate(1);
+    d.setUTCMonth(d.getUTCMonth() + n);
+    var last = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 0)).getUTCDate();
+    d.setUTCDate(Math.min(day, last));
+    return isoOf(d);
+  }
+  function monthsBetween(fromIso, toIso) {
+    var a = toDate(fromIso), b = toDate(toIso);
+    if (!a || !b) return null;
+    var whole = (b.getUTCFullYear() - a.getUTCFullYear()) * 12 + (b.getUTCMonth() - a.getUTCMonth());
+    var frac = (b.getUTCDate() - a.getUTCDate()) / 30.44;
+    return Math.max(0, Math.round((whole + frac) * 10) / 10);
+  }
+  function prettyDate(iso) {
+    var d = toDate(iso);
+    if (!d) return "Never";
+    return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] + " " + d.getUTCFullYear();
+  }
+
+  var FIELDS = ["employee_id", "name", "role", "department", "salary", "start_date", "contract_status",
+    "notice_period_weeks", "performance_score", "last_review_date", "manager_id", "risk_flags"];
+  var STATUSES = ["permanent", "probation", "contract", "verbal"];
+  var STATUS_LABEL = { permanent: "Permanent", probation: "Probation", contract: "Fixed term", verbal: "Verbal" };
+  var HUES = ["#0d9488", "#0891b2", "#4f46e5", "#7c3aed", "#d946ef", "#e11d48", "#f59e0b", "#10b981"];
+
+  /* ---------- seeded fictional register ---------- */
+  var SEED = [
+    ["E001", "Bilal Ahmed", "Chief executive", "Leadership", 350000, "2018-03-01", "permanent", 4, 72, "2026-05-20", "", ""],
+    ["E002", "Hina Raza", "HR generalist", "People", 95000, "2024-02-12", "permanent", 4, 74, "2026-09-10", "E001", ""],
+    ["E003", "Kamran Sheikh", "Senior salesperson", "Sales", 85000, "2025-04-07", "permanent", 2, 38, "", "E001", "commission_on_signature;no_quota"],
+    ["E004", "Ayesha Malik", "Lead designer", "Design", 140000, "2022-06-01", "permanent", 4, 82, "2025-09-15", "E001", "scope_requests_unanswered;pay_flat_24m"],
+    ["E005", "Danish Iqbal", "Sales lead", "Sales", 70000, "2024-11-04", "permanent", 1, 45, "", "E003", "promotion_without_criteria"],
+    ["E006", "Sana Javed", "Designer", "Design", 80000, "2026-04-20", "probation", 2, 58, "", "E004", "probation_overrun"],
+    ["E007", "Usman Tariq", "Designer", "Design", 75000, "2026-08-03", "verbal", 0, 41, "", "E004", "referral_hire;no_work_sample"],
+    ["E008", "Fatima Noor", "Account manager", "Accounts", 110000, "2023-01-16", "permanent", 4, 78, "2026-08-12", "E001", ""],
+    ["E009", "Zeeshan Ali", "Performance marketer", "Marketing", 95000, "2024-07-01", "permanent", 4, 69, "2026-06-30", "E008", ""],
+    ["E010", "Maryam Shah", "Content lead", "Content", 90000, "2023-09-11", "permanent", 4, 71, "2026-07-22", "E008", ""],
+    ["E011", "Hamza Aslam", "Video editor", "Content", 65000, "2025-10-06", "contract", 2, 63, "2026-05-05", "E010", ""],
+    ["E012", "Rabia Khan", "Copywriter", "Content", 55000, "2026-02-02", "verbal", 0, 66, "", "E010", "no_written_terms"],
+    ["E013", "Ahmed Raza", "Sales executive", "Sales", 55000, "2026-01-19", "permanent", 1, 52, "", "E005", "short_notice"],
+    ["E014", "Bilquees Bano", "Office administrator", "People", 45000, "2021-05-10", "verbal", 0, 68, "", "E002", "no_written_terms"],
+    ["E015", "Saad Munir", "Web developer", "Technology", 120000, "2023-03-20", "permanent", 4, 76, "2026-09-01", "E001", ""],
+    ["E016", "Nimra Yousaf", "QA analyst", "Technology", 70000, "2025-06-16", "contract", 2, 64, "2026-04-14", "E015", ""],
+    ["E017", "Talha Saeed", "Junior developer", "Technology", 60000, "2026-09-14", "probation", 2, 61, "", "E015", ""],
+    ["E018", "Iqra Farooq", "Social media executive", "Marketing", 50000, "2026-03-09", "verbal", 0, 57, "", "E009", "no_written_terms"],
+    ["E019", "Owais Haider", "Sales executive", "Sales", 52000, "2025-12-01", "verbal", 0, 49, "", "E003", "no_written_terms"],
+    ["E020", "Sadia Anwar", "Accounts officer", "Accounts", 65000, "2024-04-15", "permanent", 4, 73, "2026-10-02", "E008", ""],
+    ["E021", "Junaid Akbar", "Motion designer", "Design", 78000, "2025-02-10", "contract", 2, 67, "2026-03-18", "E004", ""],
+    ["E022", "Mehwish Latif", "Client coordinator", "Accounts", 48000, "2026-05-04", "verbal", 0, 60, "", "E008", "no_written_terms"]
+  ].map(function (r) {
+    var o = {};
+    FIELDS.forEach(function (f, i) { o[f] = r[i]; });
+    return o;
+  });
+
+  var DEFAULT_MODEL = { wContract: 45, wPerformance: 30, wTenure: 25, threshold: 55, noticeFloor: 4, reviewWindow: 6, perfFloor: 60 };
+  var DEFAULT_ORG = { eobi: false, gratuity: false, harassment: false, leave: true, termination: true };
+
+  var state = { employees: clone(SEED), org: clone(DEFAULT_ORG), asOf: "2026-11-23", source: "Fictional seeded data" };
+  var model = clone(DEFAULT_MODEL);
+  var view = { dept: "all", contract: "all", flagged: false, compact: false, q: "", sort: "risk_desc" };
+  var selection = new Set();
+  var undoStack = [];
+  var savedViews = [];
+  var prev = { risk: null, retention: null };
+  var openId = null;
+  var lastFocus = null;
+  var patternSeq = 0;
+
+  /* ---------- model ---------- */
+  function tokens(e) {
+    return String(e.risk_flags || "").split(";").map(function (s) { return s.trim(); }).filter(Boolean);
+  }
+  function tenure(e, asOf) { return monthsBetween(e.start_date, asOf || state.asOf) || 0; }
+  function reviewAge(e, asOf) { return e.last_review_date ? monthsBetween(e.last_review_date, asOf || state.asOf) : null; }
+
+  function contractComponent(e, m, asOf) {
+    var c = 0;
+    if (e.contract_status === "verbal") c += 60;
+    else if (e.contract_status === "probation" && tenure(e, asOf) > 3) c += 45;
+    else if (e.contract_status === "contract") c += 20;
+    var gap = Math.max(0, m.noticeFloor - e.notice_period_weeks);
+    c += Math.min(40, gap * 12);
+    return clamp(c, 0, 100);
+  }
+  function perfComponent(e, m) {
+    return clamp(((m.perfFloor - e.performance_score) / m.perfFloor) * 100, 0, 100);
+  }
+  function retentionPenalty(e, m, asOf) {
+    var p = 0;
+    var age = reviewAge(e, asOf);
+    if (age === null) p += Math.min(30, 10 + tenure(e, asOf) * 1.2);
+    else p += Math.min(24, age * 1.8) + (age > m.reviewWindow ? 4 : 0);
+    if (tenure(e, asOf) < 6) p += 8;
+    var t = tokens(e);
+    if (t.indexOf("scope_requests_unanswered") > -1) p += 14;
+    if (t.indexOf("pay_flat_24m") > -1) p += 8;
+    if (t.indexOf("promotion_without_criteria") > -1) p += 10;
+    if (e.contract_status === "verbal") p += 6;
+    return clamp(p, 0, 100);
+  }
+  function retentionIndex(e, m, asOf) { return clamp(100 - retentionPenalty(e, m, asOf), 0, 100); }
+  function weightSum(m) { return Math.max(1, m.wContract + m.wPerformance + m.wTenure); }
+  function riskOf(e, m, asOf) {
+    return clamp((contractComponent(e, m, asOf) * m.wContract + perfComponent(e, m) * m.wPerformance +
+      retentionPenalty(e, m, asOf) * m.wTenure) / weightSum(m), 0, 100);
+  }
+  function contractBreach(e, m, asOf) {
+    return e.contract_status === "verbal" || e.notice_period_weeks < m.noticeFloor ||
+      (e.contract_status === "probation" && tenure(e, asOf) > 3);
+  }
+  function perfBreach(e, m, asOf) {
+    var age = reviewAge(e, asOf);
+    return e.performance_score < m.perfFloor || age === null || age > m.reviewWindow;
+  }
+  function retentionBreach(e, m, asOf) { return retentionIndex(e, m, asOf) < 70; }
+
+  function flagsOf(e, m) {
+    var out = [];
+    var age = reviewAge(e);
+    if (e.contract_status === "verbal") out.push({ sev: "high", text: "No written terms of engagement. Standing Order 3 requires a written order." });
+    if (e.notice_period_weeks < m.noticeFloor) out.push({ sev: "high", text: "Notice of " + e.notice_period_weeks + " week" + (e.notice_period_weeks === 1 ? "" : "s") + " sits below the " + m.noticeFloor + "-week floor set in the model." });
+    if (e.contract_status === "probation" && tenure(e) > 3) out.push({ sev: "high", text: "Probation has run " + tenure(e).toFixed(1) + " months against a three-month cap. Treat as permanent and date the confirmation." });
+    if (age === null) out.push({ sev: "high", text: "Never reviewed. No performance record exists for this person." });
+    else if (age > m.reviewWindow) out.push({ sev: "watch", text: "Last review " + age.toFixed(1) + " months ago, beyond the " + m.reviewWindow + "-month window." });
+    if (e.performance_score < m.perfFloor) out.push({ sev: "high", text: "Performance " + e.performance_score + " of 100, below the " + m.perfFloor + " floor." });
+    if (retentionIndex(e, m) < 70) out.push({ sev: "watch", text: "Retention index " + Math.round(retentionIndex(e, m)) + " of 100. Book a scope and pay conversation." });
+    if (tenure(e) < 6) out.push({ sev: "watch", text: "Joined " + tenure(e).toFixed(1) + " months ago. Onboarding and a 30-day check-in are still open." });
+    tokens(e).forEach(function (t) {
+      var known = ["no_written_terms", "short_notice", "probation_overrun"];
+      if (known.indexOf(t) > -1) return;
+      out.push({ sev: "watch", text: "Logged signal: " + t.replace(/_/g, " ") + "." });
+    });
+    if (!out.length) out.push({ sev: "ok", text: "No open flag under the current model." });
+    return out;
+  }
+
+  function complianceChecks(m) {
+    var verbal = state.employees.filter(function (e) { return e.contract_status === "verbal"; }).length;
+    var shortNotice = state.employees.filter(function (e) { return e.contract_status === "permanent" && e.notice_period_weeks < m.noticeFloor; }).length;
+    var overrun = state.employees.filter(function (e) { return e.contract_status === "probation" && tenure(e) > 3; }).length;
+    return [
+      { key: "terms", label: "Written terms for every person", pass: verbal === 0, locked: true, note: verbal + " verbal" },
+      { key: "notice", label: "Notice floor for permanent staff", pass: shortNotice === 0, locked: true, note: shortNotice + " below floor" },
+      { key: "probation", label: "Probation capped at three months", pass: overrun === 0, locked: true, note: overrun + " over-run" },
+      { key: "eobi", label: "EOBI registration and contributions", pass: state.org.eobi, locked: false },
+      { key: "gratuity", label: "Gratuity or approved provident fund", pass: state.org.gratuity, locked: false },
+      { key: "harassment", label: "Harassment inquiry committee named", pass: state.org.harassment, locked: false },
+      { key: "leave", label: "Leave and attendance record kept", pass: state.org.leave, locked: false },
+      { key: "termination", label: "Written termination process", pass: state.org.termination, locked: false }
+    ];
+  }
+
+  function metrics(m, asOf) {
+    m = m || model; asOf = asOf || state.asOf;
+    var list = state.employees, n = Math.max(1, list.length);
+    var cb = 0, pb = 0, rb = 0, retSum = 0, riskSum = 0;
+    list.forEach(function (e) {
+      if (contractBreach(e, m, asOf)) cb++;
+      if (perfBreach(e, m, asOf)) pb++;
+      if (retentionBreach(e, m, asOf)) rb++;
+      retSum += retentionIndex(e, m, asOf);
+      riskSum += riskOf(e, m, asOf);
+    });
+    var score = (cb / n * 100 * m.wContract + pb / n * 100 * m.wPerformance + rb / n * 100 * m.wTenure) / weightSum(m);
+    return {
+      risk: Math.round(clamp(score, 0, 100)),
+      retention: Math.round(retSum / n),
+      meanRisk: riskSum / n,
+      contractBreach: cb, perfBreach: pb, retentionBreach: rb,
+      perfAlerts: list.filter(function (e) { return perfBreach(e, m, asOf); }).length,
+      count: list.length
+    };
+  }
+  function retentionSeries() {
+    var out = [];
+    for (var i = 5; i >= 0; i--) {
+      var d = addMonths(state.asOf, -i);
+      var list = state.employees, sum = 0;
+      list.forEach(function (e) { sum += retentionIndex(e, model, d); });
+      out.push({ date: d, label: MONTHS[toDate(d).getUTCMonth()], value: Math.round(sum / Math.max(1, list.length)) });
+    }
+    return out;
+  }
+  function riskBand(v) { return v >= model.threshold ? "high" : v >= model.threshold - 20 ? "watch" : "low"; }
+  var BAND_LABEL = { high: "High", watch: "Watch", low: "Low" };
+
+  /* ---------- undo ---------- */
+  function snapshot(label) {
+    undoStack.push({ label: label, data: clone({ employees: state.employees, org: state.org, asOf: state.asOf, source: state.source }) });
+    if (undoStack.length > 30) undoStack.shift();
+    $("undo-btn").disabled = false;
+    $("undo-btn").textContent = "Undo: " + label;
+  }
+  function undo() {
+    var last = undoStack.pop();
+    if (!last) return;
+    state.employees = last.data.employees;
+    state.org = last.data.org;
+    state.asOf = last.data.asOf;
+    state.source = last.data.source;
+    selection.clear();
+    if (!undoStack.length) { $("undo-btn").disabled = true; $("undo-btn").textContent = "Undo last change"; }
+    else { $("undo-btn").textContent = "Undo: " + undoStack[undoStack.length - 1].label; }
+    refreshDepartments();
+    render();
+    toast("Undone: " + last.label + ".");
+  }
+
+  /* ---------- toast ---------- */
+  function toast(msg, actionLabel, action) {
+    var wrap = $("toast-wrap");
+    var el = document.createElement("div");
+    el.className = "toast";
+    el.innerHTML = '<span class="msg">' + esc(msg) + "</span>";
+    if (actionLabel) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.textContent = actionLabel;
+      b.addEventListener("click", function () { action(); remove(); });
+      el.appendChild(b);
+    }
+    wrap.appendChild(el);
+    requestAnimationFrame(function () { el.classList.add("is-in"); });
+    var timer = setTimeout(remove, actionLabel ? 7000 : 3600);
+    function remove() {
+      clearTimeout(timer);
+      el.classList.remove("is-in");
+      setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 260);
+    }
+    while (wrap.children.length > 3) wrap.removeChild(wrap.firstChild);
+  }
+
+  /* ---------- clipboard and downloads ---------- */
+  function copyText(text, okMsg) {
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      toast(ok ? okMsg : "Copy blocked by the browser. Select the text and copy manually.");
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast(okMsg); }, fallback);
+    } else fallback();
+  }
+  function download(name, text, mime) {
+    var blob = new Blob([text], { type: mime || "text/plain;charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url; a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1500);
+    toast("Downloaded " + name + ".");
+  }
+  function csvCell(v) {
+    var s = String(v == null ? "" : v);
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  }
+  function toCSV(list) {
+    return FIELDS.join(",") + "\n" + list.map(function (e) {
+      return FIELDS.map(function (f) { return csvCell(e[f]); }).join(",");
+    }).join("\n") + "\n";
+  }
+
+  /* ---------- charts ---------- */
+  function barChart(rows, opts) {
+    var o = opts || {};
+    var rowH = 26, padTop = 6, labelW = o.labelW || 96, w = 360;
+    var h = padTop * 2 + rows.length * rowH;
+    var max = o.max || Math.max.apply(null, rows.map(function (r) { return r.value; })) || 1;
+    var barW = w - labelW - 62;
+    var s = '<svg viewBox="0 0 ' + w + " " + h + '" width="100%" height="' + h + '" role="img" aria-label="' + esc(o.aria || "Bar chart") + '" style="display:block;overflow:visible">';
+    s += "<defs>";
+    rows.forEach(function (r, i) {
+      var id = "pat" + (++patternSeq);
+      r.pat = id;
+      s += '<pattern id="' + id + '" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(' + (i * 22 % 90) + ')">' +
+        '<rect width="6" height="6" fill="' + r.colour + '"/><rect width="2" height="6" fill="rgba(255,255,255,.42)"/></pattern>';
+    });
+    s += "</defs>";
+    rows.forEach(function (r, i) {
+      var y = padTop + i * rowH;
+      var len = Math.max(2, (r.value / max) * barW);
+      s += '<text x="0" y="' + (y + 15) + '" style="fill:var(--ink-muted);font-size:11px;font-family:var(--font-body)">' + esc(r.label) + "</text>";
+      s += '<rect x="' + labelW + '" y="' + (y + 4) + '" width="' + barW + '" height="14" rx="3" style="fill:var(--surface-3)"/>';
+      s += '<rect x="' + labelW + '" y="' + (y + 4) + '" width="' + len.toFixed(1) + '" height="14" rx="3" fill="url(#' + r.pat + ')" stroke="' + r.colour + '" stroke-width="1"/>';
+      s += '<text x="' + (labelW + barW + 6) + '" y="' + (y + 15) + '" style="fill:var(--ink-primary);font-size:11px;font-weight:700;font-family:var(--font-mono)">' + esc(r.display) + "</text>";
+    });
+    return s + "</svg>";
+  }
+
+  function lineChart(series, opts) {
+    var o = opts || {};
+    var w = 340, h = 150, padL = 26, padR = 14, padT = 16, padB = 24;
+    var vals = series.map(function (p) { return p.value; });
+    var lo = Math.max(0, Math.min.apply(null, vals) - 8), hi = Math.min(100, Math.max.apply(null, vals) + 8);
+    if (hi - lo < 10) { hi = Math.min(100, lo + 10); }
+    var x = function (i) { return padL + i * ((w - padL - padR) / Math.max(1, series.length - 1)); };
+    var y = function (v) { return padT + (1 - (v - lo) / (hi - lo)) * (h - padT - padB); };
+    var id = "grad" + (++patternSeq);
+    var s = '<svg viewBox="0 0 ' + w + " " + h + '" width="100%" height="' + h + '" role="img" aria-label="' + esc(o.aria || "Trend line") + '" style="display:block">';
+    s += '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1">' +
+      '<stop offset="0%" stop-color="#0d9488" stop-opacity=".34"/><stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/></linearGradient></defs>';
+    [lo, (lo + hi) / 2, hi].forEach(function (v) {
+      s += '<line x1="' + padL + '" x2="' + (w - padR) + '" y1="' + y(v).toFixed(1) + '" y2="' + y(v).toFixed(1) + '" style="stroke:var(--border-subtle)" stroke-width="1"/>';
+      s += '<text x="0" y="' + (y(v) + 3).toFixed(1) + '" style="fill:var(--ink-dim);font-size:9px;font-family:var(--font-mono)">' + Math.round(v) + "</text>";
+    });
+    var line = series.map(function (p, i) { return (i ? "L" : "M") + x(i).toFixed(1) + " " + y(p.value).toFixed(1); }).join(" ");
+    s += '<path d="' + line + " L " + x(series.length - 1).toFixed(1) + " " + (h - padB) + " L " + padL + " " + (h - padB) + ' Z" fill="url(#' + id + ')"/>';
+    s += '<path d="' + line + '" fill="none" stroke="#0d9488" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>';
+    series.forEach(function (p, i) {
+      var last = i === series.length - 1;
+      s += '<circle cx="' + x(i).toFixed(1) + '" cy="' + y(p.value).toFixed(1) + '" r="' + (last ? 4 : 2.8) + '" fill="' + (last ? "#e11d48" : "#0f766e") + '" stroke="var(--surface-card)" stroke-width="1.4"/>';
+      s += '<text x="' + x(i).toFixed(1) + '" y="' + (y(p.value) - 8).toFixed(1) + '" text-anchor="middle" style="fill:var(--ink-primary);font-size:9.5px;font-weight:700;font-family:var(--font-mono)">' + p.value + "</text>";
+      s += '<text x="' + x(i).toFixed(1) + '" y="' + (h - 6) + '" text-anchor="middle" style="fill:var(--ink-dim);font-size:9px;font-family:var(--font-body)">' + esc(p.label) + "</text>";
+    });
+    return s + "</svg>";
+  }
+
+  function sparkline(series) {
+    var vals = series.map(function (p) { return p.value; });
+    var lo = Math.min.apply(null, vals) - 3, hi = Math.max.apply(null, vals) + 3;
+    if (hi - lo < 6) hi = lo + 6;
+    var pts = series.map(function (p, i) {
+      return (i * (200 / Math.max(1, series.length - 1))).toFixed(1) + "," + (30 - ((p.value - lo) / (hi - lo)) * 26).toFixed(1);
+    });
+    var last = pts[pts.length - 1].split(",");
+    return '<polyline points="' + pts.join(" ") + '" fill="none" stroke="#0d9488" stroke-width="2" stroke-linejoin="round"/>' +
+      '<circle cx="' + last[0] + '" cy="' + last[1] + '" r="3" fill="#e11d48"/>';
+  }
+
+  function renderStaticCharts() {
+    $("chart-engagement").innerHTML = barChart([
+      { label: "Pakistan", value: 4, display: "4%", colour: "#e11d48" },
+      { label: "South Asia", value: 21, display: "21%", colour: "#f59e0b" },
+      { label: "Global", value: 20, display: "20%", colour: "#0d9488" }
+    ], { max: 25, aria: "Engagement: Pakistan 4%, South Asia 21%, global 20%", labelW: 84 });
+
+    $("chart-wage").innerHTML = barChart([
+      { label: "Sindh", value: 43000, display: "43,000", colour: "#0d9488" },
+      { label: "Islamabad", value: 40700, display: "40,700", colour: "#0891b2" },
+      { label: "Punjab", value: 40000, display: "40,000", colour: "#4f46e5" },
+      { label: "Khyber P.", value: 40000, display: "40,000", colour: "#7c3aed" },
+      { label: "Balochistan", value: 37000, display: "37,000", colour: "#d946ef" }
+    ], { max: 45000, aria: "Provincial minimum wage floors for 2026-27", labelW: 84 });
+  }
+
+  /* ---------- copy blocks and brand lint ---------- */
+  var COPY = [
+    {
+      where: "Homepage · under the existing h1",
+      head: "The cost you cannot see on the payroll",
+      body: "A growing company already pays for HR. It pays in founder hours, in a salesperson who is never reviewed, in a designer who leaves without a handover, and in a contract that cannot be enforced. Emplowise replaces that spending with a named HR owner and a written record."
+    },
+    {
+      where: "Homepage and Why Emplowise · subheadline",
+      head: "Senior HR, without the senior hire.",
+      body: "Emplowise installs and runs the HR structure a growing company needs, so the founder stops being the HR helpdesk."
+    },
+    {
+      where: "Homepage · problem block",
+      head: "You are the HR department, by default",
+      body: "Pay questions arrive on WhatsApp at 11pm. Two people are on verbal terms. Nobody has been reviewed this quarter. None of this is a hiring problem. It is a structure problem, and it is priced into your week already."
+    },
+    {
+      where: "Why Emplowise · opening",
+      head: "The absence of HR has a monthly cost",
+      body: "Most founders compare a retainer against zero. The honest comparison is a retainer against what the missing structure already costs: replaceable people leaving, unenforceable contracts, unreviewed salaries and your own hours. We install the structure, then run it every month."
+    },
+    {
+      where: "Why Emplowise · situation one",
+      head: "The senior salesperson nobody reviews",
+      body: "He is the closest voice to the founder, so he shapes hiring, pay and promotions. Without a quota, a review date and a written record, his influence is the only performance system in the company. We write the quota, run the review and put the decision on paper."
+    },
+    {
+      where: "Why Emplowise · situation two",
+      head: "The designer who stops asking",
+      body: "She asks twice for a scope conversation. Both emails go unread. She does not ask a third time. A review calendar and a named owner turn a silent resignation into a scheduled conversation."
+    },
+    {
+      where: "Why Emplowise · situation three",
+      head: "The contract nobody can enforce",
+      body: "Verbal terms, one week of notice and a probation that ran past three months. When the exit comes, there is nothing to point at. Written terms, a notice floor and dated confirmations are cheap before the argument and expensive after it."
+    },
+    {
+      where: "Why Emplowise · situation four",
+      head: "The founder as HR helpdesk",
+      body: "Ten hours a week on people questions is a day and a quarter of founder time. Log it for two weeks and price it. That number, not the retainer, is the real comparison."
+    },
+    {
+      where: "New case-study section · intro",
+      head: "Your HR person is costing you more than your payroll.",
+      body: "A written illustration of one agency, six months and four decisions that went wrong without a named HR owner. It is fictional and labelled as such. The mechanism is not."
+    },
+    {
+      where: "New dashboard section · intro",
+      head: "Stop guessing about your people.",
+      body: "Four numbers, updated monthly: a Contract Risk Score, an Employee Retention Index, a Performance Alert and a Compliance Checklist. Each one names a person, an owner and a due date. No dashboard replaces a conversation. It tells you which conversation to have this week."
+    },
+    {
+      where: "Both new sections · call to action",
+      head: "Start with the free HR audit",
+      body: "Four steps: Assess, Identify, Improve, Review. You keep the written gap map whether or not you continue. Retainers start at PKR 40,000 per month for up to 20 employees."
+    },
+    {
+      where: "Why Emplowise · scope boundary",
+      head: "What we do not do",
+      body: "We are not a law firm. We do not guarantee compliance or hiring outcomes, take board authority or replace your management. Recruitment fees, payroll tax scope and contract terms are confirmed in writing after the audit."
+    }
+  ];
+
+  var BANNED = ["leverage", "ecosystem", "landscape", "holistic", "seamless"];
+  var US_SPELLINGS = [
+    [/\borganiz\w*/i, "organis"], [/\boptimiz\w*/i, "optimis"], [/\banalyz\w*/i, "analys"],
+    [/\bprioritiz\w*/i, "prioritis"], [/\brecogniz\w*/i, "recognis"], [/\bbehavior\b/i, "behaviour"],
+    [/\blabor\b/i, "labour"], [/\bfavor\b/i, "favour"], [/\bcenter\b/i, "centre"],
+    [/\bfulfill\b/i, "fulfil"], [/\benrollment\b/i, "enrolment"], [/\bdefense\b/i, "defence"]
+  ];
+  function lint(text) {
+    var issues = [];
+    var lower = text.toLowerCase();
+    BANNED.forEach(function (w) { if (lower.indexOf(w) > -1) issues.push('banned word "' + w + '"'); });
+    if (text.indexOf("\u2014") > -1) issues.push("em dash");
+    if (text.indexOf("!") > -1) issues.push("exclamation mark");
+    US_SPELLINGS.forEach(function (pair) { if (pair[0].test(text)) issues.push("American spelling, use " + pair[1]); });
+    return issues;
+  }
+  function renderCopy() {
+    var grid = $("copy-grid");
+    grid.innerHTML = "";
+    var fails = 0;
+    COPY.forEach(function (b, i) {
+      var full = b.head + "\n\n" + b.body;
+      var issues = lint(full);
+      if (issues.length) fails++;
+      var el = document.createElement("article");
+      el.className = "copy-block reveal";
+      el.innerHTML =
+        '<header><span class="where">' + esc(b.where) + '</span><span class="pill">' + String(i + 1).padStart(2, "0") + "</span></header>" +
+        '<div class="copy-text"><span class="h">' + esc(b.head) + "</span>" + esc(b.body) + "</div>" +
+        '<div class="copy-foot"><span class="lint-chip" data-state="' + (issues.length ? "fail" : "pass") + '">' +
+        (issues.length ? "✕ " + esc(issues.join(", ")) : "✓ Brand lint clean") + "</span>" +
+        '<button class="btn btn--ghost btn--sm" type="button" data-copy-block="' + i + '">Copy block</button></div>';
+      grid.appendChild(el);
+    });
+    var summary = $("lint-summary");
+    summary.setAttribute("data-state", fails ? "fail" : "pass");
+    summary.textContent = fails
+      ? "Brand lint: " + fails + " of " + COPY.length + " blocks need a fix"
+      : "Brand lint: " + COPY.length + " of " + COPY.length + " blocks clean";
+    grid.querySelectorAll("[data-copy-block]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var b = COPY[+btn.getAttribute("data-copy-block")];
+        copyText(b.head + "\n\n" + b.body, "Copied: " + b.where + ".");
+      });
+    });
+    observeReveals(grid);
+  }
+
+  /* ---------- case timeline ---------- */
+  var TIMELINE = [
+    {
+      title: "Kamran becomes the loudest voice", month: "Month 1",
+      body: "Bilal approves a design referral from Kamran over the shortlist the HR generalist prepared. The HR email recommending a work sample is never opened.",
+      flag: "Emplowise would have published a Contract Risk Score in week one: six verbal contracts and two one-week notice clauses."
+    },
+    {
+      title: "Commission is paid on signature", month: "Month 2",
+      body: "Kamran books two retainers that never start. Commission is paid anyway. There is no quota, no collection check and no review date in any file.",
+      flag: "A Performance Alert would have named the gap here, at 38 of 100 against a 60 floor, four months before the founder notices."
+    },
+    {
+      title: "Ayesha asks twice", month: "Month 3",
+      body: "The lead designer requests a scope conversation in writing, then follows up. Both emails are unread. Her last review is now over a year old and her pay has not moved in two years.",
+      flag: "The Employee Retention Index would have dropped for one named person, with an owner booked to speak to her that week."
+    },
+    {
+      title: "The promotion nobody wrote down", month: "Month 4",
+      body: "A junior executive is made sales lead because Kamran vouches for him. No criteria, no trial period, no review date. Two executives stop bringing him work.",
+      flag: "Written leadership criteria and a 90-day trial with a review date would have made this a decision instead of a favour."
+    },
+    {
+      title: "The probation that never ended", month: "Month 5",
+      body: "A designer reaches month seven of a three-month probation. No confirmation letter exists. The referral hire cannot run a client handover, so Bilal covers it himself.",
+      flag: "The Compliance Checklist would have carried the probation breach, the missing EOBI registration and the absent harassment committee, each with an owner and a due date."
+    },
+    {
+      title: "Ayesha resigns on a Friday", month: "Month 6",
+      body: "One week of notice, no handover document, two client files on a personal drive. Bilal spends the weekend on the phone. Kamran suggests his own replacement for the design lead.",
+      flag: "Every line in the ledger below was visible in month one. The retainer for those six months is PKR 240,000."
+    }
+  ];
+  var monthIndex = 1, playTimer = null;
+  function renderTimeline() {
+    var list = $("month-list");
+    list.innerHTML = "";
+    TIMELINE.forEach(function (m, i) {
+      var n = i + 1;
+      var el = document.createElement("article");
+      el.className = "month" + (n < monthIndex ? " is-past" : "") + (n === monthIndex ? " is-current" : "");
+      el.innerHTML = "<h4>" + esc(m.title) + " <span>" + esc(m.month) + "</span></h4><p>" + esc(m.body) + "</p>" +
+        (n <= monthIndex ? '<p class="flag"><span aria-hidden="true">▸</span><span>' + esc(m.flag) + "</span></p>" : "");
+      list.appendChild(el);
+    });
+    $("month-readout").textContent = "Month " + monthIndex + " of 6";
+    $("month-slider").value = String(monthIndex);
+  }
+  function setMonth(n) { monthIndex = clamp(n, 1, 6); renderTimeline(); }
+  function stopPlay() {
+    if (playTimer) { clearInterval(playTimer); playTimer = null; }
+    $("month-play").textContent = "Play the six months";
+  }
+
+  /* ---------- dashboard render ---------- */
+  function departments() {
+    var set = {};
+    state.employees.forEach(function (e) { set[e.department] = true; });
+    return Object.keys(set).sort();
+  }
+  function refreshDepartments() {
+    var sel = $("filter-dept");
+    var current = view.dept;
+    var list = departments();
+    sel.innerHTML = '<option value="all">All departments</option>' + list.map(function (d) {
+      return '<option value="' + esc(d) + '">' + esc(d) + "</option>";
+    }).join("");
+    if (current !== "all" && list.indexOf(current) === -1) view.dept = "all";
+    sel.value = view.dept;
+  }
+
+  function visibleRows() {
+    var q = view.q.trim().toLowerCase();
+    var rows = state.employees.filter(function (e) {
+      if (view.dept !== "all" && e.department !== view.dept) return false;
+      if (view.contract !== "all" && e.contract_status !== view.contract) return false;
+      if (view.flagged && !(contractBreach(e, model) || perfBreach(e, model) || retentionBreach(e, model))) return false;
+      if (q) {
+        var hay = (e.name + " " + e.role + " " + e.department + " " + e.employee_id + " " + e.risk_flags).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    }).map(function (e) {
+      return { e: e, risk: riskOf(e, model), months: tenure(e) };
+    });
+    var sort = view.sort;
+    var dir = sort.endsWith("_asc") ? 1 : -1;
+    var key = sort.replace(/_(asc|desc)$/, "");
+    rows.sort(function (a, b) {
+      var av, bv;
+      if (key === "risk") { av = a.risk; bv = b.risk; }
+      else if (key === "tenure") { av = a.months; bv = b.months; }
+      else if (key === "perf") { av = a.e.performance_score; bv = b.e.performance_score; }
+      else { av = a.e[key]; bv = b.e[key]; }
+      if (typeof av === "string") return av.localeCompare(bv) * dir;
+      return (av - bv) * dir;
+    });
+    return rows;
+  }
+
+  function renderKPIs() {
+    var m = metrics();
+    var band = riskBand(m.risk);
+    $("risk-value").textContent = m.risk;
+    $("kpi-risk").setAttribute("data-tone", band === "high" ? "rose" : band === "watch" ? "amber" : "teal");
+    $("risk-band").textContent = BAND_LABEL[band] + " band · threshold " + model.threshold;
+    $("risk-meta").textContent = m.contractBreach + " of " + m.count + " people breach the contract rules, " +
+      m.perfBreach + " the performance rules, " + m.retentionBreach + " the retention rules.";
+    if (prev.risk === null || prev.risk === m.risk) {
+      $("risk-delta").setAttribute("data-dir", "good");
+      $("risk-delta").textContent = "No change since the last adjustment";
+    } else {
+      var d = m.risk - prev.risk;
+      $("risk-delta").setAttribute("data-dir", d > 0 ? "bad" : "good");
+      $("risk-delta").textContent = (d > 0 ? "↑ +" : "↓ ") + d + " since the last adjustment";
+    }
+    prev.risk = m.risk;
+
+    var series = retentionSeries();
+    $("retention-value").textContent = m.retention;
+    var rband = m.retention >= 75 ? "Stable" : m.retention >= 60 ? "Watch" : "At risk";
+    $("retention-band").textContent = rband + " · mean of " + m.count + " individual scores";
+    $("retention-spark").innerHTML = sparkline(series);
+    var first = series[0].value, delta = m.retention - first;
+    $("retention-delta").setAttribute("data-dir", delta >= 0 ? "good" : "bad");
+    $("retention-delta").textContent = (delta >= 0 ? "↑ +" : "↓ ") + delta + " across six months";
+    prev.retention = m.retention;
+
+    var alerts = state.employees.filter(function (e) { return perfBreach(e, model); })
+      .sort(function (a, b) { return a.performance_score - b.performance_score; });
+    $("perf-count").textContent = alerts.length;
+    $("perf-band").textContent = "Below " + model.perfFloor + " or review older than " + model.reviewWindow + " months";
+    $("perf-meta").textContent = alerts.length
+      ? "Worst first: " + alerts.slice(0, 3).map(function (e) { return e.name + " " + e.performance_score; }).join(", ") + "."
+      : "Nobody is below the floor or overdue for a review.";
+    $("kpi-performance").setAttribute("data-tone", alerts.length ? "amber" : "teal");
+
+    var checks = complianceChecks(model);
+    var passed = checks.filter(function (c) { return c.pass; }).length;
+    $("comp-pass").textContent = passed;
+    $("kpi-compliance").setAttribute("data-tone", passed === checks.length ? "teal" : "info");
+    var cl = $("comp-list");
+    cl.innerHTML = "";
+    checks.forEach(function (c) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "check";
+      b.setAttribute("data-state", c.pass ? "pass" : "fail");
+      b.style.cssText = "background:none;border:0;padding:.1rem 0;text-align:left;cursor:" + (c.locked ? "default" : "pointer") + ";font-family:inherit;width:100%";
+      b.innerHTML = '<span class="box" aria-hidden="true">' + (c.pass ? "✓" : "✕") + "</span><span>" + esc(c.label) +
+        (c.note && !c.pass ? ' <span style="color:var(--ink-dim)">(' + esc(c.note) + ")</span>" : "") + "</span>";
+      if (c.locked) {
+        b.setAttribute("aria-disabled", "true");
+        b.title = "Computed from the register. Change the records to clear this check.";
+      } else {
+        b.title = "Toggle this organisational check";
+        b.addEventListener("click", function () {
+          snapshot("compliance: " + c.label);
+          state.org[c.key] = !state.org[c.key];
+          render();
+          toast(c.label + (state.org[c.key] ? " marked as in place." : " marked as open."), "Undo", undo);
+        });
+      }
+      cl.appendChild(b);
+    });
+
+    /* keep the case-study flag cards honest against the live model */
+    var verbal = state.employees.filter(function (e) { return e.contract_status === "verbal"; }).length;
+    var oneWeek = state.employees.filter(function (e) { return e.notice_period_weeks === 1; }).length;
+    var overrun = state.employees.filter(function (e) { return e.contract_status === "probation" && tenure(e) > 3; }).length;
+    $("flag-contract-text").textContent = verbal + " verbal contracts, " + oneWeek + " one-week notice clauses and " +
+      overrun + " over-run probation. Score " + m.risk + " of 100, " + BAND_LABEL[band].toLowerCase() + " band, under the default model.";
+    var kamran = state.employees.filter(function (e) { return e.name === "Kamran Sheikh"; })[0];
+    $("flag-perf-text").textContent = kamran
+      ? "Kamran at " + kamran.performance_score + " of 100 against a " + model.perfFloor + " floor, with " + pkr(kamran.salary * 6) +
+        " of salary across six months and no delivered retainer renewal. " + alerts.length + " people are flagged in total."
+      : alerts.length + " people sit below the performance floor or are overdue for a review.";
+    var ayesha = state.employees.filter(function (e) { return e.name === "Ayesha Malik"; })[0];
+    $("flag-retention-text").textContent = ayesha
+      ? "Ayesha, the lead designer, sits at " + Math.round(retentionIndex(ayesha, model)) + " of 100: last review " +
+        (reviewAge(ayesha) || 0).toFixed(0) + " months ago, two unanswered scope requests, flat pay. Register mean " + m.retention + "."
+      : "Register mean retention index " + m.retention + " of 100, with " + m.retentionBreach + " people below 70.";
+    var open = checks.filter(function (c) { return !c.pass; }).map(function (c) { return c.label.toLowerCase(); });
+    $("flag-comp-text").textContent = passed + " of " + checks.length + " checks pass. Open: " + (open.length ? open.join(", ") + "." : "none.");
+
+    $("dash-sub").textContent = state.source + " · " + m.count + " employees · model v1 · as of " + prettyDate(state.asOf);
+    return { m: m, series: series };
+  }
+
+  function renderCharts(series) {
+    var byDept = {};
+    state.employees.forEach(function (e) {
+      if (!byDept[e.department]) byDept[e.department] = { sum: 0, n: 0 };
+      byDept[e.department].sum += riskOf(e, model);
+      byDept[e.department].n++;
+    });
+    var rows = Object.keys(byDept).sort(function (a, b) {
+      return byDept[b].sum / byDept[b].n - byDept[a].sum / byDept[a].n;
+    }).map(function (d, i) {
+      var v = byDept[d].sum / byDept[d].n;
+      return { label: d, value: v, display: Math.round(v) + " (" + byDept[d].n + ")", colour: HUES[i % HUES.length] };
+    });
+    $("chart-dept").innerHTML = rows.length
+      ? barChart(rows, { max: 100, aria: "Mean risk score by department", labelW: 92 })
+      : '<p class="hint">No employees in the register.</p>';
+    $("chart-trend").innerHTML = lineChart(series, { aria: "Employee Retention Index across six months" });
+  }
+
+  function renderTable() {
+    var rows = visibleRows();
+    var body = $("emp-body");
+    body.innerHTML = "";
+    rows.forEach(function (r) {
+      var e = r.e;
+      var band = riskBand(Math.round(r.risk));
+      var tr = document.createElement("tr");
+      tr.setAttribute("data-id", e.employee_id);
+      if (selection.has(e.employee_id)) tr.className = "is-selected";
+      if (view.compact) tr.style.fontSize = ".76rem";
+      var pad = view.compact ? ".32rem .6rem" : "";
+      var dots = [contractBreach(e, model), perfBreach(e, model), retentionBreach(e, model)];
+      var flagTitle = flagsOf(e, model).map(function (f) { return f.text; }).join(" ");
+      tr.innerHTML =
+        '<td><label class="cb-hit"><input type="checkbox" data-select="' + esc(e.employee_id) + '" aria-label="Select ' + esc(e.name) + '"' + (selection.has(e.employee_id) ? " checked" : "") + "></label></td>" +
+        '<td class="name" style="padding:' + pad + '">' + esc(e.name) + '<div style="font-weight:500;font-size:.7rem;color:var(--ink-dim)">' + esc(e.employee_id) + "</div></td>" +
+        '<td style="padding:' + pad + '">' + esc(e.role) + "</td>" +
+        '<td style="padding:' + pad + '">' + esc(e.department) + "</td>" +
+        '<td class="num" style="padding:' + pad + '">' + num(e.salary) + "</td>" +
+        '<td class="num" style="padding:' + pad + '">' + r.months.toFixed(0) + "</td>" +
+        '<td style="padding:' + pad + '">' + esc(STATUS_LABEL[e.contract_status] || e.contract_status) + "</td>" +
+        '<td class="num" style="padding:' + pad + '">' + e.notice_period_weeks + "w</td>" +
+        '<td class="num" style="padding:' + pad + '">' + e.performance_score + "</td>" +
+        '<td style="padding:' + pad + '"><span class="risk-chip" data-band="' + band + '">' + Math.round(r.risk) + " " + BAND_LABEL[band] + "</span></td>" +
+        '<td style="padding:' + pad + '"><span class="flag-dots" title="' + esc(flagTitle) + '">' +
+        dots.map(function (d) { return '<i data-on="' + (d ? 1 : 0) + '"></i>'; }).join("") + "</span></td>";
+      tr.addEventListener("click", function (ev) {
+        if (ev.target && (ev.target.tagName === "INPUT" || ev.target.closest(".cb-hit"))) return;
+        openDrawer(e.employee_id);
+      });
+      body.appendChild(tr);
+    });
+    if (!rows.length) {
+      var tr2 = document.createElement("tr");
+      tr2.innerHTML = '<td colspan="11" style="padding:1rem;color:var(--ink-dim)">No person matches this view. Clear the search or the filters.</td>';
+      body.appendChild(tr2);
+    }
+    body.querySelectorAll("[data-select]").forEach(function (cb) {
+      cb.addEventListener("click", function (ev) { ev.stopPropagation(); });
+      cb.addEventListener("change", function () {
+        var id = cb.getAttribute("data-select");
+        if (cb.checked) selection.add(id); else selection.delete(id);
+        renderTable();
+      });
+    });
+    $("row-count").textContent = rows.length + " of " + state.employees.length + " people";
+    var n = selection.size;
+    $("bulk-review").disabled = n === 0;
+    $("bulk-clear").disabled = n === 0;
+    $("bulk-note").textContent = n ? n + " selected" : "";
+    var visibleIds = rows.map(function (r) { return r.e.employee_id; });
+    $("select-all").checked = visibleIds.length > 0 && visibleIds.every(function (id) { return selection.has(id); });
+    document.querySelectorAll("#emp-table th[data-sort]").forEach(function (th) {
+      var key = th.getAttribute("data-sort");
+      var map = { name: "name", salary: "salary", tenure: "tenure", performance_score: "perf", risk: "risk" };
+      var active = map[key] && view.sort.indexOf(map[key] + "_") === 0;
+      th.setAttribute("aria-sort", active ? (view.sort.endsWith("_asc") ? "ascending" : "descending") : "none");
+    });
+  }
+
+  function renderSavedViews() {
+    var wrap = $("saved-views");
+    wrap.innerHTML = "";
+    if (!savedViews.length) {
+      wrap.innerHTML = '<span style="font-size:.72rem;color:var(--ink-dim)">No saved view yet. Set the filters, then save the view.</span>';
+      return;
+    }
+    savedViews.forEach(function (v, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "view-chip";
+      b.textContent = v.name;
+      b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", function () {
+        view.dept = v.view.dept; view.contract = v.view.contract; view.flagged = v.view.flagged;
+        view.q = v.view.q; view.sort = v.view.sort; view.compact = v.view.compact;
+        model = clone(v.model);
+        syncControls();
+        refreshDepartments();
+        render();
+        wrap.querySelectorAll(".view-chip").forEach(function (c) { c.setAttribute("aria-pressed", "false"); });
+        b.setAttribute("aria-pressed", "true");
+        toast('Applied view "' + v.name + '".');
+      });
+      wrap.appendChild(b);
+      var x = document.createElement("button");
+      x.type = "button";
+      x.className = "view-chip";
+      x.textContent = "✕";
+      x.title = "Remove " + v.name;
+      x.setAttribute("aria-label", "Remove saved view " + v.name);
+      x.addEventListener("click", function () {
+        savedViews.splice(i, 1);
+        persistViews();
+        renderSavedViews();
+        toast('Removed view "' + v.name + '".');
+      });
+      wrap.appendChild(x);
+    });
+  }
+  function persistViews() {
+    try { localStorage.setItem("emplowise-report-views", JSON.stringify(savedViews)); } catch (e) { /* storage unavailable */ }
+  }
+
+  function render() {
+    var out = renderKPIs();
+    renderCharts(out.series);
+    renderTable();
+    $("dash-updated").textContent = "Updated " + new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    if (openId) fillDrawer(openId);
+  }
+
+  /* ---------- drawer ---------- */
+  function fieldHTML(id, label, inputHTML) {
+    return '<label class="field" for="' + id + '"><span>' + esc(label) + "</span>" + inputHTML + "</label>";
+  }
+  function fillDrawer(id) {
+    var e = state.employees.filter(function (x) { return x.employee_id === id; })[0];
+    if (!e) { closeDrawer(); return; }
+    $("drawer-name").textContent = e.name;
+    $("drawer-role").textContent = e.role + " · " + e.department + " · " + e.employee_id;
+    var manager = state.employees.filter(function (x) { return x.employee_id === e.manager_id; })[0];
+    var flags = flagsOf(e, model);
+    var html =
+      '<div class="field-grid">' +
+      '<div class="field"><span>Risk score</span><b>' + Math.round(riskOf(e, model)) + " / 100 · " + BAND_LABEL[riskBand(Math.round(riskOf(e, model)))] + "</b></div>" +
+      '<div class="field"><span>Retention index</span><b>' + Math.round(retentionIndex(e, model)) + " / 100</b></div>" +
+      '<div class="field"><span>Tenure</span><b>' + tenure(e).toFixed(1) + " months</b></div>" +
+      '<div class="field"><span>Reports to</span><b>' + esc(manager ? manager.name : "Nobody on record") + "</b></div>" +
+      "</div>" +
+      '<div class="flags">' + flags.map(function (f) {
+        return '<div class="flag-row" data-sev="' + f.sev + '"><span class="dot" aria-hidden="true"></span><span>' + esc(f.text) + "</span></div>";
+      }).join("") + "</div>" +
+      '<div class="field-grid">' +
+      fieldHTML("d-name", "Name", '<input type="text" id="d-name" value="' + esc(e.name) + '">') +
+      fieldHTML("d-role", "Role", '<input type="text" id="d-role" value="' + esc(e.role) + '">') +
+      fieldHTML("d-dept", "Department", '<input type="text" id="d-dept" value="' + esc(e.department) + '">') +
+      fieldHTML("d-salary", "Salary, PKR per month", '<input type="number" id="d-salary" min="0" step="1000" value="' + e.salary + '">') +
+      fieldHTML("d-start", "Start date", '<input type="date" id="d-start" value="' + esc(e.start_date) + '">') +
+      fieldHTML("d-status", "Contract status", '<select id="d-status">' + STATUSES.map(function (s) {
+        return '<option value="' + s + '"' + (s === e.contract_status ? " selected" : "") + ">" + STATUS_LABEL[s] + "</option>";
+      }).join("") + "</select>") +
+      fieldHTML("d-notice", "Notice, weeks", '<input type="number" id="d-notice" min="0" max="26" step="1" value="' + e.notice_period_weeks + '">') +
+      fieldHTML("d-perf", "Performance, 0 to 100", '<input type="number" id="d-perf" min="0" max="100" step="1" value="' + e.performance_score + '">') +
+      fieldHTML("d-review", "Last review date", '<input type="date" id="d-review" value="' + esc(e.last_review_date) + '">') +
+      fieldHTML("d-manager", "Manager id", '<input type="text" id="d-manager" value="' + esc(e.manager_id) + '" placeholder="E001 or empty">') +
+      "</div>" +
+      fieldHTML("d-flags", "Logged signals, semicolon separated", '<input type="text" id="d-flags" value="' + esc(e.risk_flags) + '">') +
+      '<p style="font-size:.74rem;color:var(--ink-dim);margin:0">Fictional record. Edits stay in this page and are undoable.</p>';
+    $("drawer-body").innerHTML = html;
+  }
+  function openDrawer(id) {
+    openId = id;
+    lastFocus = document.activeElement;
+    fillDrawer(id);
+    $("scrim").hidden = false;
+    requestAnimationFrame(function () {
+      $("scrim").classList.add("is-open");
+      $("drawer").classList.add("is-open");
+    });
+    $("drawer").setAttribute("aria-hidden", "false");
+    $("drawer-close").focus();
+  }
+  function closeDrawer() {
+    openId = null;
+    $("scrim").classList.remove("is-open");
+    $("drawer").classList.remove("is-open");
+    $("drawer").setAttribute("aria-hidden", "true");
+    setTimeout(function () { if (!openId) $("scrim").hidden = true; }, 420);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  /* ---------- validation ---------- */
+  function validateRecord(r, ids, index) {
+    var errs = [];
+    var at = "Row " + (index + 1) + (r.employee_id ? " (" + r.employee_id + ")" : "") + ": ";
+    if (!r.employee_id) errs.push(at + "employee_id is empty.");
+    else if (ids[r.employee_id]) errs.push(at + "employee_id is duplicated.");
+    if (!r.name) errs.push(at + "name is empty.");
+    var salary = Number(r.salary);
+    if (!isFinite(salary) || salary < 0 || Math.round(salary) !== salary) errs.push(at + "salary must be a whole number of PKR, zero or above.");
+    if (!toDate(r.start_date)) errs.push(at + "start_date must be YYYY-MM-DD.");
+    if (r.last_review_date && !toDate(r.last_review_date)) errs.push(at + "last_review_date must be YYYY-MM-DD or empty.");
+    if (STATUSES.indexOf(r.contract_status) === -1) errs.push(at + "contract_status must be permanent, probation, contract or verbal.");
+    var notice = Number(r.notice_period_weeks);
+    if (!isFinite(notice) || notice < 0 || notice > 26 || Math.round(notice) !== notice) errs.push(at + "notice_period_weeks must be a whole number from 0 to 26.");
+    var perf = Number(r.performance_score);
+    if (!isFinite(perf) || perf < 0 || perf > 100 || Math.round(perf) !== perf) errs.push(at + "performance_score must be a whole number from 0 to 100.");
+    return errs;
+  }
+  function parseCSV(text) {
+    var rows = [], row = [], cur = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { cur += '"'; i++; } else q = false;
+        } else cur += c;
+      } else if (c === '"') q = true;
+      else if (c === ",") { row.push(cur); cur = ""; }
+      else if (c === "\n") { row.push(cur); rows.push(row); row = []; cur = ""; }
+      else if (c !== "\r") cur += c;
+    }
+    if (cur.length || row.length) { row.push(cur); rows.push(row); }
+    return rows.filter(function (r) { return r.some(function (c) { return c.trim() !== ""; }); });
+  }
+  function importCSV(text) {
+    var result = $("import-result");
+    var rows = parseCSV(text);
+    if (rows.length < 2) {
+      result.setAttribute("data-state", "error");
+      result.textContent = "✕ Need a header row and at least one employee row.";
+      return;
+    }
+    var header = rows[0].map(function (h) { return h.trim(); });
+    var missing = FIELDS.filter(function (f) { return header.indexOf(f) === -1; });
+    if (missing.length) {
+      result.setAttribute("data-state", "error");
+      result.textContent = "✕ Missing columns: " + missing.join(", ") + ".";
+      return;
+    }
+    var ids = {}, errs = [], records = [];
+    rows.slice(1).forEach(function (cells, i) {
+      var r = {};
+      FIELDS.forEach(function (f) {
+        var v = cells[header.indexOf(f)];
+        r[f] = v == null ? "" : v.trim();
+      });
+      r.salary = r.salary === "" ? NaN : Number(r.salary);
+      r.notice_period_weeks = r.notice_period_weeks === "" ? NaN : Number(r.notice_period_weeks);
+      r.performance_score = r.performance_score === "" ? NaN : Number(r.performance_score);
+      errs = errs.concat(validateRecord(r, ids, i));
+      if (r.employee_id) ids[r.employee_id] = true;
+      records.push(r);
+    });
+    records.forEach(function (r, i) {
+      if (r.manager_id && !ids[r.manager_id]) errs.push("Row " + (i + 1) + ": manager_id " + r.manager_id + " is not an employee_id in this file.");
+    });
+    if (errs.length) {
+      result.setAttribute("data-state", "error");
+      result.innerHTML = "✕ " + errs.length + " problem" + (errs.length === 1 ? "" : "s") + ". Nothing was loaded.<br>" +
+        esc(errs.slice(0, 4).join(" ")) + (errs.length > 4 ? " And " + (errs.length - 4) + " more." : "");
+      return;
+    }
+    snapshot("CSV import");
+    state.employees = records;
+    state.source = "Imported CSV";
+    selection.clear();
+    view.dept = "all";
+    refreshDepartments();
+    render();
+    result.setAttribute("data-state", "ok");
+    result.textContent = "✓ Loaded " + records.length + " employees. All eight validation rules passed. Undo is available in the control rail.";
+    toast("Loaded " + records.length + " employees from CSV.", "Undo", undo);
+  }
+
+  /* ---------- schema panels ---------- */
+  function renderSchema() {
+    var sample = SEED[3];
+    var lines = FIELDS.map(function (f) {
+      var v = sample[f];
+      var val = typeof v === "number" ? '<span class="n">' + v + "</span>" : '<span class="s">"' + esc(v) + '"</span>';
+      return '    <span class="k">"' + f + '"</span>: ' + val;
+    });
+    var notes = {
+      employee_id: "unique, required", salary: "PKR per month, integer",
+      start_date: "YYYY-MM-DD", contract_status: "permanent | probation | contract | verbal",
+      notice_period_weeks: "0 to 26, statutory floor 4", performance_score: "0 to 100",
+      last_review_date: "YYYY-MM-DD or empty for never reviewed", manager_id: "an employee_id or empty",
+      risk_flags: "semicolon separated tokens"
+    };
+    var json = '<span class="c">// employees.json · one flat record per person</span>\n[\n  {\n' +
+      lines.map(function (l, i) {
+        var f = FIELDS[i];
+        return l + (i < lines.length - 1 ? "," : "") + (notes[f] ? '  <span class="c">// ' + notes[f] + "</span>" : "");
+      }).join("\n") + "\n  }\n]\n";
+    $("json-schema").innerHTML = json;
+    $("csv-sample").textContent = toCSV(SEED.slice(0, 5));
+  }
+
+  /* ---------- controls ---------- */
+  function syncControls() {
+    $("w-contract").value = model.wContract; $("w-contract-out").textContent = model.wContract;
+    $("w-performance").value = model.wPerformance; $("w-performance-out").textContent = model.wPerformance;
+    $("w-tenure").value = model.wTenure; $("w-tenure-out").textContent = model.wTenure;
+    $("threshold-out").textContent = model.threshold;
+    $("notice-floor").value = String(model.noticeFloor);
+    $("review-window").value = String(model.reviewWindow);
+    $("perf-floor").value = model.perfFloor; $("perf-floor-out").textContent = model.perfFloor;
+    $("filter-dept").value = view.dept;
+    $("filter-contract").value = view.contract;
+    $("flagged-only").checked = view.flagged;
+    $("density").checked = view.compact;
+    $("emp-search").value = view.q;
+    $("sort-by").value = view.sort;
+  }
+
+  function bindControls() {
+    [["w-contract", "wContract", "w-contract-out"], ["w-performance", "wPerformance", "w-performance-out"], ["w-tenure", "wTenure", "w-tenure-out"]]
+      .forEach(function (t) {
+        $(t[0]).addEventListener("input", function () {
+          model[t[1]] = +this.value;
+          $(t[2]).textContent = this.value;
+          render();
+        });
+      });
+    $("perf-floor").addEventListener("input", function () {
+      model.perfFloor = +this.value;
+      $("perf-floor-out").textContent = this.value;
+      render();
+    });
+    $("threshold-down").addEventListener("click", function () {
+      model.threshold = clamp(model.threshold - 5, 20, 95);
+      $("threshold-out").textContent = model.threshold;
+      render();
+    });
+    $("threshold-up").addEventListener("click", function () {
+      model.threshold = clamp(model.threshold + 5, 20, 95);
+      $("threshold-out").textContent = model.threshold;
+      render();
+    });
+    $("notice-floor").addEventListener("change", function () { model.noticeFloor = +this.value; render(); });
+    $("review-window").addEventListener("change", function () { model.reviewWindow = +this.value; render(); });
+    $("filter-dept").addEventListener("change", function () { view.dept = this.value; renderTable(); });
+    $("filter-contract").addEventListener("change", function () { view.contract = this.value; renderTable(); });
+    $("flagged-only").addEventListener("change", function () { view.flagged = this.checked; renderTable(); });
+    $("density").addEventListener("change", function () { view.compact = this.checked; renderTable(); });
+    $("emp-search").addEventListener("input", function () { view.q = this.value; renderTable(); });
+    $("sort-by").addEventListener("change", function () { view.sort = this.value; renderTable(); });
+
+    document.querySelectorAll("#emp-table th[data-sort]").forEach(function (th) {
+      th.addEventListener("click", function () {
+        var map = { name: "name", role: "role", department: "department", salary: "salary", tenure: "tenure",
+          contract_status: "contract_status", notice_period_weeks: "notice_period_weeks", performance_score: "perf", risk: "risk" };
+        var key = map[th.getAttribute("data-sort")];
+        if (!key) return;
+        var asc = view.sort === key + "_desc";
+        view.sort = key + (asc ? "_asc" : "_desc");
+        $("sort-by").value = ["risk_desc", "risk_asc", "name_asc", "salary_desc", "perf_asc", "tenure_desc"].indexOf(view.sort) > -1 ? view.sort : $("sort-by").value;
+        renderTable();
+      });
+    });
+
+    $("select-all").addEventListener("change", function () {
+      var rows = visibleRows();
+      if (this.checked) rows.forEach(function (r) { selection.add(r.e.employee_id); });
+      else rows.forEach(function (r) { selection.delete(r.e.employee_id); });
+      renderTable();
+    });
+    $("bulk-clear").addEventListener("click", function () { selection.clear(); renderTable(); });
+    $("bulk-review").addEventListener("click", function () {
+      var n = selection.size;
+      if (!n) return;
+      snapshot("review date for " + n + " people");
+      state.employees.forEach(function (e) { if (selection.has(e.employee_id)) e.last_review_date = state.asOf; });
+      selection.clear();
+      render();
+      toast("Marked " + n + " people as reviewed on " + prettyDate(state.asOf) + ".", "Undo", undo);
+    });
+
+    $("reset-model").addEventListener("click", function () {
+      model = clone(DEFAULT_MODEL);
+      view = { dept: "all", contract: "all", flagged: false, compact: false, q: "", sort: "risk_desc" };
+      selection.clear();
+      prev.risk = null;
+      refreshDepartments();
+      syncControls();
+      render();
+      toast("Model and view reset to the published defaults.");
+    });
+
+    $("simulate").addEventListener("click", function () {
+      snapshot("simulate one month");
+      state.asOf = addMonths(state.asOf, 1);
+      state.employees.forEach(function (e) {
+        if (perfBreach(e, model, addMonths(state.asOf, -1)) && e.performance_score > 20) {
+          e.performance_score = clamp(e.performance_score - 2, 0, 100);
+        }
+      });
+      render();
+      toast("Simulated to " + prettyDate(state.asOf) + ". Reviews age and open performance gaps widen.", "Undo", undo);
+    });
+
+    $("undo-btn").addEventListener("click", undo);
+
+    $("export-csv").addEventListener("click", function () {
+      download("emplowise-employees-" + state.asOf + ".csv", toCSV(state.employees), "text/csv;charset=utf-8");
+    });
+    $("export-json").addEventListener("click", function () {
+      var payload = { as_of: state.asOf, source: state.source, model: model, compliance: state.org, employees: state.employees };
+      download("emplowise-employees-" + state.asOf + ".json", JSON.stringify(payload, null, 2), "application/json");
+    });
+
+    $("add-employee").addEventListener("click", function () {
+      var maxN = state.employees.reduce(function (acc, e) {
+        var m = /^E(\d+)$/.exec(e.employee_id);
+        return m ? Math.max(acc, +m[1]) : acc;
+      }, 0);
+      var id = "E" + String(maxN + 1).padStart(3, "0");
+      snapshot("add employee");
+      state.employees.push({
+        employee_id: id, name: "New person", role: "Role to confirm", department: departments()[0] || "People",
+        salary: 60000, start_date: state.asOf, contract_status: "probation", notice_period_weeks: 4,
+        performance_score: 60, last_review_date: "", manager_id: "", risk_flags: ""
+      });
+      refreshDepartments();
+      render();
+      openDrawer(id);
+      toast("Added " + id + ". Edit the record, then save.", "Undo", undo);
+    });
+
+    $("save-view").addEventListener("click", function () {
+      var name = (view.dept === "all" ? "All" : view.dept) + (view.flagged ? " flagged" : "") + " · " + view.sort.replace("_", " ");
+      savedViews.push({ name: name, view: clone(view), model: clone(model) });
+      if (savedViews.length > 6) savedViews.shift();
+      persistViews();
+      renderSavedViews();
+      toast('Saved view "' + name + '".');
+    });
+
+    $("drawer-close").addEventListener("click", closeDrawer);
+    $("scrim").addEventListener("click", closeDrawer);
+    $("drawer-save").addEventListener("click", function () {
+      if (!openId) return;
+      var idx = -1;
+      state.employees.forEach(function (e, i) { if (e.employee_id === openId) idx = i; });
+      if (idx < 0) return;
+      var current = state.employees[idx];
+      var draft = {
+        employee_id: current.employee_id,
+        name: $("d-name").value.trim(),
+        role: $("d-role").value.trim(),
+        department: $("d-dept").value.trim() || "People",
+        salary: Number($("d-salary").value),
+        start_date: $("d-start").value,
+        contract_status: $("d-status").value,
+        notice_period_weeks: Number($("d-notice").value),
+        performance_score: Number($("d-perf").value),
+        last_review_date: $("d-review").value,
+        manager_id: $("d-manager").value.trim(),
+        risk_flags: $("d-flags").value.trim()
+      };
+      var ids = {};
+      state.employees.forEach(function (e) { if (e.employee_id !== current.employee_id) ids[e.employee_id] = true; });
+      var errs = validateRecord(draft, ids, idx);
+      if (draft.manager_id && !ids[draft.manager_id]) errs.push("manager_id must be another employee_id in this register.");
+      if (errs.length) { toast(errs[0]); return; }
+      snapshot("edit " + current.name);
+      state.employees[idx] = draft;
+      refreshDepartments();
+      render();
+      closeDrawer();
+      toast("Saved " + draft.name + ".", "Undo", undo);
+    });
+    $("drawer-copy").addEventListener("click", function () {
+      var e = state.employees.filter(function (x) { return x.employee_id === openId; })[0];
+      if (e) copyText(JSON.stringify(e, null, 2), "Copied the record for " + e.name + ".");
+    });
+    $("drawer-delete").addEventListener("click", function () {
+      var e = state.employees.filter(function (x) { return x.employee_id === openId; })[0];
+      if (!e) return;
+      snapshot("remove " + e.name);
+      state.employees = state.employees.filter(function (x) { return x.employee_id !== openId; });
+      selection.delete(openId);
+      refreshDepartments();
+      render();
+      closeDrawer();
+      toast("Removed " + e.name + " from the register.", "Undo", undo);
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && openId) { closeDrawer(); return; }
+      if (ev.key === "Tab" && openId) {
+        var f = $("drawer").querySelectorAll("button,input,select,textarea");
+        if (!f.length) return;
+        var first = f[0], last = f[f.length - 1];
+        if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
+        else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
+      }
+    });
+
+    $("csv-load").addEventListener("click", function () { importCSV($("csv-input").value); });
+    $("csv-fill").addEventListener("click", function () {
+      $("csv-input").value = toCSV(SEED);
+      $("import-result").setAttribute("data-state", "ok");
+      $("import-result").textContent = "✓ Sample pasted. Load it to replace the register.";
+    });
+    $("csv-restore").addEventListener("click", function () {
+      snapshot("restore fictional register");
+      state.employees = clone(SEED);
+      state.org = clone(DEFAULT_ORG);
+      state.asOf = "2026-11-23";
+      state.source = "Fictional seeded data";
+      selection.clear();
+      view.dept = "all";
+      refreshDepartments();
+      render();
+      $("import-result").setAttribute("data-state", "ok");
+      $("import-result").textContent = "✓ Fictional register restored: 22 people, as of 23 Nov 2026.";
+      toast("Fictional register restored.", "Undo", undo);
+    });
+    $("download-schema").addEventListener("click", function () {
+      download("employees-schema.json", JSON.stringify([SEED[3]], null, 2), "application/json");
+    });
+    $("download-csv-sample").addEventListener("click", function () {
+      download("employees-template.csv", toCSV(SEED), "text/csv;charset=utf-8");
+    });
+    $("hero-export").addEventListener("click", function () {
+      download("emplowise-employee-template.csv", toCSV(SEED), "text/csv;charset=utf-8");
+    });
+    document.querySelectorAll("[data-copy-target]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var el = $(b.getAttribute("data-copy-target"));
+        copyText(el.textContent, "Copied " + b.getAttribute("data-copy-target") + ".");
+      });
+    });
+    $("copy-all").addEventListener("click", function () {
+      var doc = COPY.map(function (b) { return "## " + b.where + "\n\n" + b.head + "\n\n" + b.body; }).join("\n\n");
+      copyText(doc, "Copied all " + COPY.length + " copy blocks.");
+    });
+
+    $("month-slider").addEventListener("input", function () { stopPlay(); setMonth(+this.value); });
+    $("month-reset").addEventListener("click", function () { stopPlay(); setMonth(1); });
+    $("month-play").addEventListener("click", function () {
+      if (playTimer) { stopPlay(); return; }
+      setMonth(1);
+      $("month-play").textContent = "Pause";
+      playTimer = setInterval(function () {
+        if (monthIndex >= 6) { stopPlay(); return; }
+        setMonth(monthIndex + 1);
+      }, 1400);
+    });
+  }
+
+  /* ---------- theme, nav, progress, reveal ---------- */
+  function applyTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    $("theme-toggle").setAttribute("aria-pressed", t === "dark" ? "true" : "false");
+    $("theme-glyph").textContent = t === "dark" ? "◑" : "◐";
+    $("theme-label").textContent = t === "dark" ? "Light" : "Dark";
+    try { localStorage.setItem("emplowise-report-theme", t); } catch (e) { /* storage unavailable */ }
+  }
+  function bindChrome() {
+    applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
+    $("theme-toggle").addEventListener("click", function () {
+      applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+    });
+    $("print-btn").addEventListener("click", function () { window.print(); });
+
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll("[data-nav]"));
+    var sections = navLinks.map(function (a) { return $(a.getAttribute("data-nav")); }).filter(Boolean);
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        ticking = false;
+        var doc = document.documentElement;
+        var max = doc.scrollHeight - window.innerHeight;
+        $("progress-fill").style.width = (max > 0 ? clamp(window.scrollY / max, 0, 1) * 100 : 0) + "%";
+        var headerH = document.querySelector(".site-header").getBoundingClientRect().height;
+        var line = headerH + 60;
+        var active = null;
+        sections.forEach(function (s) { if (s.getBoundingClientRect().top <= line) active = s.id; });
+        revealPass();
+        navLinks.forEach(function (a) {
+          if (a.getAttribute("data-nav") === active) a.setAttribute("aria-current", "true");
+          else a.removeAttribute("aria-current");
+        });
+      });
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    onScroll();
+  }
+
+  function observeReveals() { revealPass(); }
+  function revealPass() {
+    var limit = window.innerHeight * 0.94;
+    document.querySelectorAll(".reveal:not(.is-in)").forEach(function (n) {
+      if (n.getBoundingClientRect().top < limit) n.classList.add("is-in");
+    });
+  }
+
+  /* ---------- boot ---------- */
+  function init() {
+    try {
+      var stored = localStorage.getItem("emplowise-report-views");
+      if (stored) {
+        var parsed = JSON.parse(stored);
+        if (Array.isArray(parsed)) savedViews = parsed.slice(0, 6);
+      }
+    } catch (e) { savedViews = []; }
+
+    var sa = $("select-all");
+    var hit = document.createElement("label");
+    hit.className = "cb-hit";
+    sa.parentNode.insertBefore(hit, sa);
+    hit.appendChild(sa);
+
+    renderStaticCharts();
+    renderCopy();
+    renderTimeline();
+    renderSchema();
+    refreshDepartments();
+    syncControls();
+    bindControls();
+    bindChrome();
+    renderSavedViews();
+    render();
+    observeReveals(document);
+    $("import-result").textContent = "Sample ready. Paste your own CSV or fill the sample, then load it.";
+    window.addEventListener("beforeprint", function () {
+      document.querySelectorAll(".reveal").forEach(function (n) { n.classList.add("is-in"); });
+    });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>
+</body>
+</html>

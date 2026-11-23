@@ -8,7 +8,13 @@ This folder is the single source of truth for the Emplowise Brand Kit 2026.
 - `brand-tokens.json` is the machine-readable mirror for generators, docs and
   CI parity checks. Keep it in lockstep with `tokens.css`.
 - `assets/` holds the vector-clean logo cuts the Office generators embed
-  (`logo-primary-375.png`, `logo-reverse-375.png`).
+  (`logo-primary-375.png`, `logo-reverse-375.png`, `logo-mark.png`) and
+  `assets/fonts/` holds the two self-hosted variable WOFF2 files
+  (`montserrat-e56e84e5-latin.woff2`, `jakarta-fdb05bf0-latin.woff2`). They are
+  byte-identical to the copies the main site serves from `public/fonts/`.
+- `generators/report-ui/build.py` inlines these fonts and cuts as base64 into
+  the internal executive report, so that artifact needs nothing outside this
+  repository and opens offline.
 
 ## Sync into the main site
 

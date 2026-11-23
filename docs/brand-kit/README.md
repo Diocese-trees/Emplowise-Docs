@@ -112,16 +112,40 @@ guessed. Tier references follow the six-tier hierarchy in
 | 18 | Any partner, accelerator or programme relationship that can be named | Portfolio section B, deck slide 06 | 2 Customer statement or 3 dated source | Founder |
 | 19 | Launch date for the AI automation division | Company profile 06, portfolio section D, deck slide 08 | 4 Competitor signal only today | Founder |
 | 20 | Ship dates for Phase II (showcase, Office suite, vector logo) and Phase III | Deck slide 08 speaker notes | 5 | Founder |
+| 21 | Share of Pakistani firms of 5 to 100 staff with no named HR owner | Executive report Step 1b | 3 Dated secondary research, none exists; settle with the audit field `hr_owner_named` | Delivery |
+| 22 | Contract misuse rate inside small firms | Executive report Step 1b | 3; the 88.4% ILOSTAT figure is economy-wide and cannot stand in. Settle with `contract_status` and `notice_period_weeks` per employee | Delivery |
+| 23 | Frequency of notice-period violations by firm size | Executive report Step 1b | 3; no public enforcement dataset. Settle by comparing `notice_period_weeks` against four weeks for every permanent record | Delivery |
+| 24 | Sales underperformance benchmark for small Pakistani agencies | Executive report Step 1b | 5 Internal belief; settle with quota, collected revenue and `performance_score` across two review cycles | Delivery |
+| 25 | Cost of the founder acting as the HR helpdesk | Executive report Step 1b, Step 3 ledger | 5; settle with a two-week time log, `founder_hr_hours_per_week` and the founder's own hourly value | Founder |
 
 Items 1 to 9 mirror `config('emplowise.pending_inputs')`, so the site and the
 documents cannot drift apart. Item 10 is the only market-sizing question; the
 deck keeps a qualitative wedge on the slide and the numbers in the notes.
 
+Items 21 to 25 come from the 2026 executive report. Each one is published there
+as `[CANNOT VERIFY]` with the single audit field that would settle it, so the
+marker is retired by collecting data rather than by rewording the claim. Twenty
+audits give a defensible internal rate, labelled with its sample size and date.
+See [`../reports/EXECUTIVE_REPORT_2026.md`](../reports/EXECUTIVE_REPORT_2026.md).
+
+## Internal reports
+
+The 2026 executive report is authored here and built here, but it is not an
+Office deliverable and it is not published. It argues one idea, that the
+founder is overspending on the absence of HR, and it carries the five
+`[CANNOT VERIFY]` items above plus a labelled fictional case study.
+
+| Source | Built artifact | Rebuild | Owner |
+| --- | --- | --- | --- |
+| [`../reports/EXECUTIVE_REPORT_2026.md`](../reports/EXECUTIVE_REPORT_2026.md) | `reports/Emplowise-Executive-Report-2026.html` and `.pdf` | `make report` | Founder |
+
 ## Related documentation
 
+- [`../reports/README.md`](../reports/README.md) indexes the internal reports
+  and maps each report section to the document that owns its rule.
 - [`../REPO_TOPOLOGY.md`](../REPO_TOPOLOGY.md) explains the three repositories.
 - [`../STATIC_HOSTING.md`](../STATIC_HOSTING.md) explains the GitHub Pages build.
 - [`../THEME_AND_MOTION.md`](../THEME_AND_MOTION.md) documents the dark mode and
   motion contract behind the live palette.
-- [`../../CONTENT_EDITING_GUIDE.md`](../../CONTENT_EDITING_GUIDE.md) explains how
+- [`../CONTENT_EDITING_GUIDE.md`](../CONTENT_EDITING_GUIDE.md) explains how
   to edit `config/emplowise.php` without breaking the SEO audit.

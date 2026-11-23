@@ -7,7 +7,7 @@ repo authors, and the product repo ships EmploStart.
 | Repo | Role | Publishes |
 | --- | --- | --- |
 | `Emplowise-Website-Phase-I` (main) | B2B conversion site, the `/emplostart` launcher, the showcase pages and the `/docs` hub | `gh-pages` → GitHub Pages |
-| `Emplowise-Docs` (staged in `_staging/Emplowise-Docs/`) | Single source of truth for `.md`, canonical `brand-tokens/`, DOCX/PPTX generators, built `exports/`, sync scripts | internal |
+| `Emplowise-Docs` (staged in `_staging/Emplowise-Docs/`) | Single source of truth for `.md`, canonical `brand-tokens/`, DOCX/PPTX generators, built `exports/`, internal reports and their builder, sync scripts | internal |
 | `EmploStart` (staged in `_staging/EmploStart/`) | Standalone, permanently free career utility with a deterministic Non-AI default and opt-in AI | its own GitHub Pages site |
 | `Emplowise-repo-qodar-ai-work-in-progress` | Private full mirror for work in progress | nothing (publisher disabled) |
 
@@ -16,6 +16,16 @@ in `public/css/tokens.css`, and `exports/*.docx|*.pptx` land in
 `public/downloads/`. `scripts/sync.py check` fails when the copies drift. The
 rest of this document describes the original/copy mirror workflow that predates
 the split and still applies to the main site.
+
+### What never leaves the Docs repo
+
+`docs/reports/` holds internal executive reports and `reports/` holds their
+built artifacts. The 2026 executive report carries `[CANNOT VERIFY]` markers
+and a labelled fictional case study, so it is internal by construction.
+`sync.py` copies only `.docx` and `.pptx` from `exports/`, which means an
+internal `.html` or `.pdf` cannot reach `public/downloads/` by accident. Rebuild
+it with `make report`, verify it with `make report-check`, and read the folder
+index in [`reports/README.md`](reports/README.md).
 
 ## The main site and its private mirror
 

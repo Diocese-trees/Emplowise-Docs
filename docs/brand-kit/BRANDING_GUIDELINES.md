@@ -94,6 +94,11 @@ sources disagree, the higher tier is used and the conflict is written down.
 - Date every external source. An undated statistic is tier 6.
 - Keep the Open Evidence Ledger in [`README.md`](README.md) current. A document
   that raises a new question adds it there before the document ships.
+- Name the field that would settle a missing figure, not just the gap. The 2026
+  executive report does this for five Pakistan HR claims, ledger items 21 to 25,
+  each with one audit field such as `hr_owner_named` or
+  `founder_hr_hours_per_week`. See
+  [`../reports/EXECUTIVE_REPORT_2026.md`](../reports/EXECUTIVE_REPORT_2026.md).
 
 ### Public-render sanitization
 
@@ -101,7 +106,10 @@ A verification note is an internal marker written as a square-bracketed `To Veri
 
 - `docs/brand-kit/*.md` internal Verification sections,
 - `PITCH_DECK.md` speaker notes and evidence lines,
-- the Open Evidence Ledger in `docs/brand-kit/README.md`.
+- the Open Evidence Ledger in `docs/brand-kit/README.md`,
+- internal reports under `docs/reports/` and their built artifacts in
+  `reports/`, which use the explicit `[CANNOT VERIFY]` form and are never
+  synced into `public/downloads/` or served by the public site.
 
 It is forbidden in DOCX bodies, PPTX slide faces and public HTML. The Office
 builders strip or refuse it, and a Feature test asserts that no public page

@@ -281,3 +281,19 @@ rather than a transform, and never rely on motion alone.
    overflow in both themes. 1199 must show the top bar; 1200 must show the left
    rail with `body { padding-left: 184px }` and a fixed 184px header.
 5. Check the no-JS case: no visible toggle, no overlay, content readable.
+
+## 6. The same contract outside the site
+
+The internal executive report preview is a separate single-file artifact, not a
+site route, and it follows this contract rather than inventing one: the same
+token names, the same pre-paint theme bootstrap reading
+`localStorage["emplowise-report-theme"]`, the same Midnight Navy dark surfaces,
+opacity and transform transitions only, nothing longer than 950 ms, and
+`prefers-reduced-motion: reduce` honoured. Its light-theme `--ink-dim` is
+`#5f6e84`, a lightness-only adjustment inside the existing slate hue, so small
+text clears 4.5:1 on white, ice and sand.
+
+Rebuild and verify it from this repo with `make report-check`. See
+[`reports/EXECUTIVE_REPORT_2026.md`](reports/EXECUTIVE_REPORT_2026.md) for the
+dashboard model and [`../brand-tokens/tokens.css`](../brand-tokens/tokens.css)
+for the token authority.

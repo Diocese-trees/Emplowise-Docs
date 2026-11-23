@@ -152,5 +152,5 @@ Text edits never need a rebuild. If you change a stylesheet in `public/css`, run
 `php artisan emplowise:bundle-css` afterwards and commit the regenerated
 `site.css` in the same change set, or the site keeps serving the old
 bundle. See "Styles and assets" in the README, and
-[`docs/THEME_AND_MOTION.md`](docs/THEME_AND_MOTION.md) before touching colours or
+[`docs/THEME_AND_MOTION.md`](THEME_AND_MOTION.md) before touching colours or
 adding a component that must work in dark mode.
