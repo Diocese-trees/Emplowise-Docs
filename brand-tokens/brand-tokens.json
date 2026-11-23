@@ -1,0 +1,111 @@
+{
+  "$comment": "Canonical Emplowise Brand Kit 2026. The CSS in tokens.css is the runtime source; this JSON is the machine-readable mirror for docs, generators, and sync checks. Keep the two in lockstep.",
+  "version": "2026",
+  "tagline": "Clarity Built on Structure",
+  "philosophy": "Empower people. Simplify work. Build momentum.",
+  "color": {
+    "core": {
+      "navy": "#081B3E",
+      "teal": "#0D9488",
+      "tealDeep": "#0F766E",
+      "aqua": "#5EEAD4",
+      "ice": "#F0F9F9",
+      "offWhite": "#F7F7F7",
+      "slate": "#16233C",
+      "_slateSpecSwatch": "#1E293B",
+      "white": "#FFFFFF"
+    },
+    "supporting": {
+      "navy900": "#050F26",
+      "navy800": "#0B2450",
+      "navy700": "#123061",
+      "navy600": "#1B3F7A",
+      "teal600": "#0B8276",
+      "cyan": "#22D3EE",
+      "cyanDeep": "#0891B2",
+      "indigo": "#4F46E5",
+      "violet": "#7C3AED",
+      "magenta": "#D946EF",
+      "amber": "#F59E0B",
+      "amberDeep": "#92400E",
+      "rose": "#E11D48"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger": "#E11D48",
+      "info": "#0EA5E9"
+    },
+    "neutral": {
+      "slate700": "#334155",
+      "slate600": "#475569",
+      "slate500": "#54637A",
+      "slate400": "#94A3B8",
+      "slate300": "#CBD5E1",
+      "line": "#E4EAF1",
+      "lineStrong": "#CBD5E1",
+      "sand": "#F8F4EE",
+      "sandLine": "#E8DFD2"
+    },
+    "surface": {
+      "canvas": "#F4F9FB",
+      "card": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "inkPrimary": "#081B3E",
+      "inkMuted": "#54637A"
+    }
+  },
+  "type": {
+    "display": {
+      "family": "Montserrat",
+      "weights": [700, 800],
+      "fallback": ["Helvetica Neue", "Arial", "sans-serif"]
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "weights": [400, 500, 600],
+      "fallback": ["Segoe UI", "system-ui", "-apple-system", "sans-serif"]
+    },
+    "mono": {
+      "family": "SFMono-Regular",
+      "fallback": ["ui-monospace", "Cascadia Code", "Consolas", "monospace"]
+    }
+  },
+  "spacing": {
+    "s1": "0.25rem",
+    "s2": "0.5rem",
+    "s3": "0.75rem",
+    "s4": "1rem",
+    "s5": "1.5rem",
+    "s6": "2rem",
+    "s7": "3rem",
+    "s8": "4rem",
+    "s9": "6rem"
+  },
+  "layout": {
+    "shell": "1140px",
+    "prose": "65ch",
+    "headerHeight": "64px"
+  },
+  "radius": {
+    "xs": "8px",
+    "sm": "12px",
+    "md": "16px",
+    "lg": "22px",
+    "xl": "30px",
+    "pill": "999px"
+  },
+  "motion": {
+    "ease": "cubic-bezier(0.22, 0.61, 0.36, 1)",
+    "easeOut": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "durationFast": "0.22s",
+    "duration": "0.42s",
+    "durationSlow": "0.95s"
+  },
+  "rules": [
+    "Zero neon glows, decorative gradients in body copy, or fake browser chrome.",
+    "Flat surfaces with soft navy shadows; teal-to-aqua gradients reserved for emphasis.",
+    "No raw [To Verify] markers in public HTML, DOCX, or PPTX bodies.",
+    "Montserrat for display headings, Plus Jakarta Sans for body."
+  ]
+}
