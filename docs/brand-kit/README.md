@@ -1,9 +1,14 @@
 # Emplowise brand kit and showcase suite
 
-This folder mirrors the canonical 2026 Emplowise brand, commercial, portfolio
-and pitch-deck Markdown authored in the `Emplowise-Docs` repo. The Office files
-in `public/downloads/` are generated there and synced here; the hosted pages
-`/company-profile`, `/portfolio` and `/pitch-deck` render the same copy.
+This folder mirrors the canonical 2026 Emplowise brand, commercial, portfolio,
+prompt-library and pitch-deck Markdown authored in the `Emplowise-Docs` repo.
+The Office files in `public/downloads/` are generated there and synced here; the
+hosted pages `/company-profile`, `/portfolio` and `/pitch-deck` render the same
+copy.
+
+`EMPLOWISE_START_14_PROMPT_LIBRARY.md` documents the EmploStart prompt library:
+fourteen rubric-driven prompts, one per letter of EMPLOWISE and START, built from
+the canonical `EmploStart/data/prompt-library.json`.
 
 Nothing here invents a client, a metric, a testimonial or a market size. Where a
 detail depends on Emplowise's own records it is written as `[To Verify: ...]`
@@ -20,6 +25,7 @@ never reaches a slide face, a DOCX body or a public page.
 | [`PORTFOLIO.md`](PORTFOLIO.md) | `Emplowise-Portfolio-2026.docx` | `/portfolio` | Founder | Source complete, repo-evidenced only |
 | [`WEBSITE_BREAKDOWN.md`](WEBSITE_BREAKDOWN.md) | `Emplowise-Website-Breakdown-2026.docx` | none, download only | Engineering | Source complete |
 | [`TOOL_STACK.md`](TOOL_STACK.md) | `Emplowise-Tool-Stack-2026.docx` | none, download only | Engineering | Source complete |
+| [`EMPLOWISE_START_14_PROMPT_LIBRARY.md`](EMPLOWISE_START_14_PROMPT_LIBRARY.md) | `Emplowise-Start-Prompt-Library-2026.docx` | none, download only | Founder / Product | Source complete, gated on `EmploStart/data/prompt-library.json` |
 | [`PITCH_DECK.md`](PITCH_DECK.md) | `Emplowise-Pitch-Deck-2026.pptx` | `/pitch-deck` | Founder | Source complete, TAM/SAM/SOM in speaker notes only |
 
 Status values mean: **Source complete** (the Markdown is written and gated),
@@ -35,7 +41,7 @@ Neither touches the site's PHP, Blade, CSS or JavaScript.
 
 ```bash
 cd ../Emplowise-Docs            # or the staged _staging/Emplowise-Docs/
-bash scripts/build.sh           # tokens + 6 DOCX + PPTX + verify
+bash scripts/build.sh           # tokens + 7 DOCX + PPTX + verify
 python3 scripts/sync.py exports # copy the built files into public/downloads/
 ```
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the brand-kit Markdown sources as six branded DOCX files.
+"""Render the brand-kit Markdown sources as seven branded DOCX files.
 
 Run from anywhere; paths are resolved from this file.
 
@@ -82,6 +82,12 @@ DOCUMENTS = [
         "Emplowise-Tool-Stack-2026.docx",
         "Tool Stack 2026",
         "Verified versions and the Phase II upgrade ledger",
+    ),
+    (
+        "EMPLOWISE_START_14_PROMPT_LIBRARY.md",
+        "Emplowise-Start-Prompt-Library-2026.docx",
+        "EmploStart Prompt Library 2026",
+        "EMPLOWISE × START: 14 letters, 14 prompts",
     ),
 ]
 

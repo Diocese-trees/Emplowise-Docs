@@ -37,4 +37,4 @@ make build        # token check + rebuild + verify-office
 make sync-check   # main repo must match this repo
 ```
 
-`verify_office.py` must print six DOCX passes and an eight-slide PPTX pass.
+`verify_office.py` must print seven DOCX passes and an eight-slide PPTX pass.

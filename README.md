@@ -12,7 +12,7 @@ counts.
 
 | Path | What lives there |
 | --- | --- |
-| `docs/brand-kit/` | Brand kit, branding guidelines, company profile, portfolio, pitch deck, website breakdown, tool stack, deliverable README |
+| `docs/brand-kit/` | Brand kit, branding guidelines, company profile, portfolio, pitch deck, website breakdown, tool stack, the EMPLOWISE × START 14-prompt library, deliverable README |
 | `docs/` | Static hosting, repo topology, theme and motion, content editing guide, hosting, and the EmploStart chat research notes |
 | `brand-tokens/` | `tokens.css` (runtime authority), `brand-tokens.json` (machine mirror), embedded logo cuts |
 | `generators/` | `build_docx.py`, `build_pptx.py`, `verify_office.py`, pinned requirements |
@@ -26,9 +26,13 @@ python3 -m pip install -r generators/requirements.txt
 make build          # or: bash scripts/build.sh
 ```
 
-`make build` checks token parity, rebuilds six DOCX and the eight-slide PPTX,
+`make build` checks token parity, rebuilds seven DOCX and the eight-slide PPTX,
 and runs `verify_office.py`, which fails on a missing package part, a broken
 slide count, or an internal marker leaking into a document body.
+
+The seventh DOCX, `Emplowise-Start-Prompt-Library-2026.docx`, documents the
+EmploStart prompt library: fourteen prompts, one per letter of EMPLOWISE and
+START, sourced from `EmploStart/data/prompt-library.json`.
 
 ## Sync into the main site
 
