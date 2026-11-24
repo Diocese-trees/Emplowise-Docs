@@ -139,3 +139,11 @@ byte-identical on both sides, so a copy edit has to land in both places.
   controls those. The CSP travels as a `<meta>` tag instead of a header.
 - Server behaviours (throttling, 419 CSRF expiry) do not exist; the client
   handles their absence as "use the local engine".
+
+## Vercel
+
+Vercel can host the same export with real response headers and server-side
+redirects, which GitHub Pages cannot provide. Setup, the configuration table,
+the pre-flight checks and the troubleshooting steps live in
+[`VERCEL.md`](VERCEL.md). Nothing is deployed there until the repository
+variable `VERCEL_ENABLED` is set, and Pages remains the canonical host.

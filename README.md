@@ -13,7 +13,7 @@ counts.
 | Path | What lives there |
 | --- | --- |
 | `docs/brand-kit/` | Brand kit, branding guidelines, company profile, portfolio, pitch deck, website breakdown, tool stack, the EMPLOWISE × START 14-prompt library, deliverable README |
-| `docs/` | Static hosting, repo topology, theme and motion, content editing guide, hosting, and the EmploStart chat research notes |
+| `docs/` | Static hosting on GitHub Pages, the Vercel deployment, repo topology, theme and motion, content editing guide, and the EmploStart chat research notes |
 | `docs/reports/` | Internal executive reports: the 2026 executive report and its folder index. Never synced to the public site |
 | `brand-tokens/` | `tokens.css` (runtime authority), `brand-tokens.json` (machine mirror), embedded logo cuts, the two self-hosted variable fonts |
 | `generators/` | `build_docx.py`, `build_pptx.py`, `verify_office.py`, pinned requirements, and `report-ui/` (the executive report parts, builder and acceptance harness) |
