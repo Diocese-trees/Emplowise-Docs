@@ -1,0 +1,968 @@
+
+
+================ PAGE: /  (file index.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/
+In sitemap: YES
+Title (60): Remote HR Services in Pakistan for Growing Teams | Emplowise
+Meta description (136): Emplowise runs remote HR for startups and SMEs in Pakistan. Payroll, performance, and policy from PKR 40,000 a month. Book a free audit.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Remote HR Services in Pakistan for Growing Teams | Emplowise", "og:description": "Emplowise runs remote HR for startups and SMEs in Pakistan. Payroll, performance, and policy from PKR 40,000 a month. Book a free audit.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Remote HR Services in Pakistan for Growing Teams | Emplowise", "twitter:description": "Emplowise runs remote HR for startups and SMEs in Pakistan. Payroll, performance, and policy from PKR 40,000 a month. Book a free audit.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 665
+--- Headings (H1-H3) ---
+  H1: Remote HR services in Pakistan, run by one accountable team.
+  H2: Four doors. Pick the one that fits.
+  H2: What our remote HR services in Pakistan cover.
+  H3: Payroll
+  H3: Performance Management
+  H3: Policy Making
+  H2: Start with a free HR audit. Leave with a gap list.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  /free-hr-audit/ | 'Book a free HR audit'
+  /emplostart/ | 'Open the EmploStart'
+  /what-we-do/ | 'What we do The three pillars and every confirmed service.'
+  /why-emplowise/ | 'Pricing Monthly retainers by headcount, from PKR 40,000.'
+  /emplostart/ | 'EmploStart Six free career modules. No account needed.'
+  /contact/ | 'Contact Talk to the team and book the free audit.'
+  /what-we-do/ | '01 Payroll Payroll and HR operations Salary inputs, leave, attendance, records, and onboarding run on one calendar instead of five spreadsheets. See the confirmed services'
+  /what-we-do/ | '02 Performance Management Performance and people insight Review cycles, manager support, and conflict handling that produce decisions rather than another form. See the confirmed services'
+  /what-we-do/ | '03 Policy Making Policy, compliance, and documentation Policies and SOPs written for how the team actually works, drafted in days and reviewed on a schedule. See the confirmed services'
+  /free-hr-audit/ | 'Book the free audit'
+  /why-emplowise/ | 'See how the four-stage method works'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Remote HR for teams of 5 to 100 Remote HR services in Pakistan, run by one accountable team . Payroll, performance and policy, handled remotely by one named lead. Published retainers from PKR 40,000 a month. The free audit ends with a written gap list. Currently running payroll inputs Book a free HR audit Open the EmploStart Delivery One remote HR team, backed by specialist consultants. Focus Payroll, performance, and policy on one monthly rhythm. First step A free audit and a prioritised gap list in one conversation. Jump to the shortcuts Remote delivery Free career tools The operating stack One calendar Payroll inputs, leave, records 4 services One source Review cycles and manager prompts 4 services One cadence Policies with owners and versions 4 services One register Confirmed services in scope 14 Method stages per engagement 4 Free modules in EmploStart 6 Confirmed services Complete recruitment Employee onboarding HR documentation and employee records Leave and attendance management HR policies and SOPs Payroll Legal and compliance support Performance support Employee relations and conflict support Organizational assessments Monthly HR reporting Ongoing HR consultation Specialist HR consultant support Dedicated HR representative Complete recruitment Employee onboarding HR documentation and employee records Leave and attendance management HR policies and SOPs Payroll Legal and compliance support Performance support Employee relations and conflict support Organizational assessments Monthly HR reporting Ongoing HR consultation Specialist HR consultant support Dedicated HR representative Navigate Four doors. Pick the one that fits. This page is the map, not the manual. Each card opens the page that answers that question in full. What we do The three pillars and every confirmed service. Pricing Monthly retainers by headcount, from PKR 40,000. EmploStart Six free career modules. No account needed. Contact Talk to the team and book the free audit. What we run What our remote HR services in Pakistan cover. Every pillar opens the confirmed services, workflow checks, and templates behind it. Nothing is listed that the team does not deliver. 01 Payroll Payroll and HR operations Salary inputs, leave, attendance, records, and onboarding run on one calendar instead of five spreadsheets. See the confirmed services 02 Performance Management Performance and people insight Review cycles, manager support, and conflict handling that produce decisions rather than another form. See the confirmed services 03 Policy Making Policy, compliance, and documentation Policies and SOPs written for how the team actually works, drafted in days and reviewed on a schedule. See the confirmed services Start with a free HR audit. Leave with a gap list. Book the free audit See how the four-stage method works Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /what-we-are/  (file what-we-are.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-are/
+In sitemap: YES
+Title (59): HR Outsourcing Company in Pakistan, Remote Team | Emplowise
+Meta description (143): Emplowise is an HR outsourcing company in Pakistan. A remote HR team installs payroll, performance, and policy structure for startups and SMEs.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-are/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "HR Outsourcing Company in Pakistan, Remote Team | Emplowise", "og:description": "Emplowise is an HR outsourcing company in Pakistan. A remote HR team installs payroll, performance, and policy structure for startups and SMEs.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-are/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "HR Outsourcing Company in Pakistan, Remote Team | Emplowise", "twitter:description": "Emplowise is an HR outsourcing company in Pakistan. A remote HR team installs payroll, performance, and policy structure for startups and SMEs.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 1020
+--- Headings (H1-H3) ---
+  H1: An HR outsourcing company in Pakistan that answers directly.
+  H2: Everyone knows who owns what.
+  H2: Four rules that decide how we work.
+  H3: Clarity
+  H3: Structure
+  H3: Substance
+  H3: Trust
+  H2: How the Emplowise team splits the work.
+  H3: Muhammad Ali
+  H3: Abdul Hadi
+  H3: Samarah Nabil
+  H2: Three audiences. One standard of clarity.
+  H3: For startups
+  H3: For SMEs
+  H3: For career pivoters
+  H2: How an HR outsourcing company in Pakistan delivers.
+  H2: What we confirm in writing after the audit.
+  H2: Bring us your current HR reality.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /why-emplowise/ | 'See our HR outsourcing pricing in Pakistan'
+  /emplostart/ | 'Open the free EmploStart'
+  /free-hr-audit/ | 'Book the free audit'
+  /what-we-do/ | 'See the confirmed HR services'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Our Story Senior HR, without the senior hire An HR outsourcing company in Pakistan that answers directly . Emplowise is an HR outsourcing company in Pakistan and the remote HR team for startups and SMEs. We install the payroll, performance, and policy structure behind your people operations, then run it, so founders stop acting as the HR helpdesk. Why we exist Everyone knows who owns what. Emplowise exists so growing teams stop treating HR as paperwork that happens after the real work. We run the structure behind people operations, remote, so founders keep momentum and employees get clarity. It starts with your yearly goals: the HR is built to deliver them before the next quarter. Category: HR outsourcing and managed HR services. Market: Pakistan. International expansion planned long term. Senior HR, without the senior hire. The Emplowise brand essence, 2026 Brand Kit Emplowise started after its founder experienced the steep cost of outsourced HR while building an earlier startup. The gap was obvious. Informal HR on one side, expensive enterprise consultancies on the other. Emplowise was built to sit in between, as accessible remote HR for growing Pakistani businesses. Core values Four rules that decide how we work. Four operating commitments. Each one changes what we deliver and what we refuse to promise. 01 Clarity Plain language, defined ownership, and decisions that are written down. If a process cannot be explained in one page, it is not finished. 02 Structure Policies, records, payroll inputs, and review cadences that hold up when the team doubles. Structure is what makes growth calm. 03 Substance Practical execution over theory. Documentation, manager coaching, and clean handovers beat decks about culture. 04 Trust We do not promise legal outcomes, guaranteed productivity, or board authority. We promise a clear scope, honest status, and visible progress. The people behind the work How the Emplowise team splits the work. Three people, three owners, one operating rhythm. Switch tabs to meet the team. 01 Muhammad Ali Advisor 02 Abdul Hadi Co-Founder 03 Samarah Nabil Co-Founder MA 01 Advisor Advisor Muhammad Ali Focus Vision, governance, and operational growth Strategic advisor guiding Emplowise's long-term vision, governance, and operational growth. AH 02 Co-Founder Co-Founder Abdul Hadi Focus Content Strategist & Strategic Marketer A marketer by design and storyteller by passion, driving Strategic Partnerships at Advegen alongside founding roles at Emplowise and The Creative Nexus. Navigates the gray to align brand narrative, growth strategy, and impact across SDGs 1, 3, 4, and 8. SN 03 Co-Founder Co-Founder Samarah Nabil Focus Senior HR Business Manager & Analyst Brings 9+ years of experience in strategic HR, talent acquisition, and performance management, having engaged and supported 2,000+ employees. Leads Emplowise's core people operations, analytics, and organizational frameworks. Profiles are confirmed. Portraits are placeholders until the official shoot. Who we sit with Three audiences. One standard of clarity. Startups, SMEs, and early career candidates get the same structured thinking. Two are paid engagements. The third is free, on purpose. S For startups You are hiring faster than you are documenting. Emplowise installs the minimum viable HR stack: contracts, policies, onboarding, payroll rhythm, and a person your team can actually ask. See our HR outsourcing pricing in Pakistan M For SMEs You have people operations that grew by accident. Emplowise audits the gaps, then runs attendance, payroll inputs, performance cycles, and reporting on a fixed monthly retainer. See our HR outsourcing pricing in Pakistan T For career pivoters Career pivoters and early career candidates get the same structured thinking, free. Six modules cover pivot planning, career reimagining, market assessment, ATS feedback, interview practice, and a profile builder. Open the free EmploStart How we deliver How an HR outsourcing company in Pakistan delivers. Delivery is remote. A dedicated HR representative gives your CEO or founder direct access, backed by specialist consultants on defined problems. Remote HR support HR consultants backed by specialist support A dedicated HR representative Direct access to the client CEO or founder Full time versus shared allocation of the dedicated representative is confirmed in writing after your Free HR Audit. Scope boundaries What we confirm in writing after the audit. Confirmed after audit These details depend on your own records and contracts. We confirm each one in writing instead of filling the gap with invented facts. Package by package service inclusions and limits Recruitment fee inclusion versus separate billing Payroll tax, statutory contribution, and disbursement scope Legal advice qualifications and jurisdiction coverage Dedicated representative allocation, full time versus shared Assessment cadence and industry focus Contract length and notice terms Verified client results, testimonials, and baseline metrics Direct contact phone number and inbox Bring us your current HR reality. Book the free audit See the confirmed HR services Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /what-we-do/  (file what-we-do.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-do/
+In sitemap: YES
+Title (56): HR Operations Outsourcing for Pakistani SMEs | Emplowise
+Meta description (147): HR operations outsourcing across payroll, performance, and policy. Fourteen confirmed services, remote delivery in Pakistan, one four-stage method.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-do/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "HR Operations Outsourcing for Pakistani SMEs | Emplowise", "og:description": "HR operations outsourcing across payroll, performance, and policy. Fourteen confirmed services, remote delivery in Pakistan, one four-stage method.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-do/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "HR Operations Outsourcing for Pakistani SMEs | Emplowise", "twitter:description": "HR operations outsourcing across payroll, performance, and policy. Fourteen confirmed services, remote delivery in Pakistan, one four-stage method.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 1250
+--- Headings (H1-H3) ---
+  H1: HR operations outsourcing across three confirmed pillars.
+  H2: Payroll
+  H3: Workflow checks and templates
+  H3: Confirmed services
+  H2: Performance Management
+  H3: Workflow checks and templates
+  H3: Confirmed services
+  H2: Policy Making
+  H3: Workflow checks and templates
+  H3: Confirmed services
+  H2: Fourteen services inside HR operations outsourcing.
+  H2: A repeatable path from audit to review.
+  H3: Assess
+  H3: Identify
+  H3: Improve
+  H3: Review
+  H2: What changes when the structure lands.
+  H2: See where your HR stack actually breaks.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /free-hr-audit/ | 'Audit this pillar'
+  /free-hr-audit/ | 'Start with the audit'
+  /free-hr-audit/ | 'Book the free audit'
+  /why-emplowise/ | 'See HR outsourcing pricing'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / What We Do Confirmed services, one method HR operations outsourcing across three confirmed pillars . Emplowise runs HR operations outsourcing for startups and SMEs in Pakistan, fully remote. Fourteen confirmed services sit across three pillars, and every engagement follows the same four-stage method. Retainers start at PKR 40,000 a month. Remote delivery Dedicated HR representative Specialist consultant backup Monthly reporting Free diagnostic audit Pillar 01 Payroll Payroll and HR operations Salary inputs, leave, attendance, records, and onboarding run on one calendar instead of five spreadsheets. Delivered remotely by your HR team. Audit this pillar Workflow checks and templates Automated input checks that flag missing attendance, unpaid leave, and salary changes before payroll closes. Leave balances that update from a single approved record, not a manual tally. Generated letters and records for onboarding, confirmation, and exits from approved templates. Confirmed services Service Scope note Employee onboarding Structured onboarding workflow for new team members. HR documentation and employee records Centralised personnel records and HR files. Leave and attendance management Ongoing tracking of employee leave and attendance. Payroll Payroll management. Exact tax and disbursement scope is confirmed in writing after your Free HR Audit. Pillar 02 Performance Management Performance and people insight Review cycles, manager support, and conflict handling that produce decisions rather than another form. Delivered remotely by your HR team. Audit this pillar Workflow checks and templates Review cycle reminders, manager prompts, and summary drafts generated from submitted feedback. Structured assessment questionnaires scored and grouped before the leadership review. Monthly people reports assembled from attendance, headcount, and review data. Confirmed services Service Scope note Performance support Structured support for manager and employee performance. Employee relations and conflict support Guidance for interdepartmental friction and workplace conflict. Organizational assessments Review of HR gaps ahead of quarterly planning. Cadence is confirmed in writing after your Free HR Audit. Monthly HR reporting Monthly people visibility delivered to client leadership. Pillar 03 Policy Making Policy, compliance, and documentation Policies and SOPs written for how the team actually works, drafted in days and reviewed on a schedule. Delivered remotely by your HR team. Audit this pillar Workflow checks and templates Policy drafts generated from a short intake of team size, industry, and current practice. Version tracking so every employee handbook change has an owner, a date, and an approval. Compliance checklists mapped to the policies that cover them, with gaps listed explicitly. Confirmed services Service Scope note Complete recruitment End to end hiring execution. Recruitment fee terms are confirmed in writing after your Free HR Audit. HR policies and SOPs Operational policies aligned to day to day management. Legal and compliance support Compliance coordination. Legal advice qualifications are confirmed in writing after your Free HR Audit. Ongoing HR consultation Continuous HR guidance backed by specialist consultants. The full service catalogue Fourteen services inside HR operations outsourcing. The pillar showcase explains how the work fits together. This catalogue lists the actual service families used to scope an engagement. Family Service Status and scope Managed HR Operations Complete recruitment End to end hiring execution. Recruitment fee terms are confirmed in writing after your Free HR Audit. Managed HR Operations Employee onboarding Structured onboarding workflow for new team members. Managed HR Operations HR documentation and employee records Centralised personnel records and HR files. Managed HR Operations Leave and attendance management Ongoing tracking of employee leave and attendance. Managed HR Operations HR policies and SOPs Operational policies aligned to day to day management. Managed HR Operations Payroll Payroll management. Exact tax and disbursement scope is confirmed in writing after your Free HR Audit. Managed HR Operations Legal and compliance support Compliance coordination. Legal advice qualifications are confirmed in writing after your Free HR Audit. Organizational Intelligence Performance support Structured support for manager and employee performance. Organizational Intelligence Employee relations and conflict support Guidance for interdepartmental friction and workplace conflict. Organizational Intelligence Organizational assessments Review of HR gaps ahead of quarterly planning. Cadence is confirmed in writing after your Free HR Audit. Executive HR Partnership Monthly HR reporting Monthly people visibility delivered to client leadership. Executive HR Partnership Ongoing HR consultation Continuous HR guidance backed by specialist consultants. Executive HR Partnership Specialist HR consultant support Specialist input on defined people problems within agreed scope. Executive HR Partnership Dedicated HR representative Direct access to the client CEO or founder. Full time versus shared allocation is confirmed in writing after your Free HR Audit. Every service above is confirmed in the 2026 brief. Package inclusion per tier is confirmed in writing after your Free HR Audit. Diagnostic method A repeatable path from audit to review. The same four-stage method sits behind every pillar and shapes the free HR audit, minus the implementation. 01 Assess Audit the current state. Structure, contracts, records, payroll inputs, leave practice, performance habits, and unresolved people issues. A written gap map and a prioritised list of fixes. 02 Identify Separate symptoms from causes. Pin down unclear ownership, missing policy coverage, and process steps that rely on memory. A short action plan with owners and a sequence. 03 Improve Install the fix. Policies, SOPs, payroll calendar, onboarding flow, manager coaching, and the reporting that follows. Running processes, not recommendations. 04 Review Check what held. Monthly reporting, quarterly assessment, and a standing list of open risks. A review pack for leadership every cycle. Operating outcomes What changes when the structure lands. These are operating outcomes Emplowise works toward. Baseline metrics and verified client results are confirmed in writing after your Free HR Audit, so no percentages are published here. Start with the audit Founders stop acting as the HR helpdesk. Payroll and leave run to a published calendar. Every employee has a record, a contract, and a policy set that matches reality. Managers get a script and a process for difficult conversations. Leadership sees headcount, attendance, and open people risks in one report. Baseline metrics and verified client results are confirmed in writing after your Free HR Audit. We do not publish invented percentages, savings, or client names. See where your HR stack actually breaks. Book the free audit See HR outsourcing pricing Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /what-we-are-building/  (file what-we-are-building.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-are-building/
+In sitemap: YES
+Title (59): Where AI Fits: AI Automation for HR in Pakistan | Emplowise
+Meta description (141): Emplowise is building AI automation for HR: a payroll engine, a performance insight layer, and a policy co-pilot. The division is pre-launch.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-are-building/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Where AI Fits: AI Automation for HR in Pakistan | Emplowise", "og:description": "Emplowise is building AI automation for HR: a payroll engine, a performance insight layer, and a policy co-pilot. The division is pre-launch.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/what-we-are-building/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Where AI Fits: AI Automation for HR in Pakistan | Emplowise", "twitter:description": "Emplowise is building AI automation for HR: a payroll engine, a performance insight layer, and a policy co-pilot. The division is pre-launch.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 492
+--- Headings (H1-H3) ---
+  H1: Where AI fits: AI automation for HR, in the open.
+  H2: Where AI automation for HR will plug in.
+  H3: Payroll Engine
+  H3: Performance Insight Layer
+  H3: Policy Co-Pilot
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /what-we-do/ | 'See the confirmed HR services'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Emplowise AI Automation Division. Building soon. Home / Where's AI Pre-launch division Where AI fits: AI automation for HR , in the open. Emplowise is building AI automation for HR. A payroll engine, a performance insight layer, and a policy co-pilot are in pre-launch, and this page shows the shape of the division. Three modules are built and waiting on launch. The interfaces are real, the data is frozen, and nothing here pretends to be live. Building Soon See the confirmed HR services No waitlist and no intake form yet. The confirmed HR services stay live while this division finishes its build. Where AI automation for HR will plug in. Three modules already in the build. Each module is scoped, designed, and waiting on launch approval. The dashboard shows how they fit together. In build Payroll Engine Turns attendance, leave, and salary inputs into a checked payroll run. Variance flags surface before payday, not after. In build Performance Insight Layer Reads review cycles and manager notes to show where goals drift, which teams need support, and what changed since last quarter. In build Policy Co-Pilot Answers policy questions from the approved handbook, cites the clause, and drafts an update when the rule changes. AI operations desk Preview Static preview Payroll inputs Mapped Review signals Mapped Policy answers Mapped Payroll Engine Attendance, leave, salary inputs Staged Performance Insight Layer Review cycles and manager notes Staged Policy Co-Pilot Approved handbook and clause citations Staged Static preview. No live data, no client records. See the confirmed HR services Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /why-emplowise/  (file why-emplowise.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise/
+In sitemap: YES
+Title (51): Why Emplowise for Remote HR in Pakistan | Emplowise
+Meta description (147): See why Emplowise is the remote HR partner for growing teams in Pakistan, with published pricing from PKR 40,000, clear scope, and a free HR audit.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Why Emplowise for Remote HR in Pakistan | Emplowise", "og:description": "See why Emplowise is the remote HR partner for growing teams in Pakistan, with published pricing from PKR 40,000, clear scope, and a free HR audit.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Why Emplowise for Remote HR in Pakistan | Emplowise", "twitter:description": "See why Emplowise is the remote HR partner for growing teams in Pakistan, with published pricing from PKR 40,000, clear scope, and a free HR audit.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 1109
+--- Headings (H1-H3) ---
+  H1: Why Emplowise is the remote HR partner for growing teams.
+  H2: One remote HR partner, with the price on the page.
+  H3: Remote by design
+  H3: One accountable team
+  H3: Published headcount pricing
+  H2: What the price includes, and what it does not
+  H3: No invented deliverables
+  H2: Why Emplowise publishes HR pricing by headcount.
+  H2: Every service that can sit inside a retainer.
+  H2: Pick a package after the audit, not before.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /free-hr-audit/ | 'Start with the free audit'
+  /free-hr-audit/ | 'Request a quote'
+  /free-hr-audit/ | 'Book the free audit'
+  /faq/ | 'Read pricing questions'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Why Us Published pricing and scope Why Emplowise is the remote HR partner for growing teams. Why Emplowise? Because remote HR should come with published pricing, a named team, and a scope you can read before you commit. Starter is PKR 40,000 for up to 20 staff, Business is PKR 75,000 for up to 50, and Enterprise is quoted above 50. The case for Emplowise One remote HR partner, with the price on the page. Three facts decide whether an HR partner is worth the retainer: what the work covers, who owns it, and what it costs. Emplowise publishes all three before the first call. Remote by design Payroll, performance, and policy run remotely, so the cost goes into the work rather than an office. One accountable team A dedicated HR representative works with your founder or CEO, backed by specialist support. Published headcount pricing Starter, Business, and Enterprise are priced by headcount, with inclusions confirmed in writing. Starter PKR 40,000 per month Up to 20 employees For a small team that needs the basics done properly. Startups up to 20 staff without a dedicated HR hire. Services drawn from the confirmed catalogue. Deliverables per tier: confirmed in writing after your Free HR Audit. Service inclusions are confirmed in writing after your Free HR Audit. Start with the free audit Core tier Business PKR 75,000 per month Up to 50 employees For a growing company with real process volume. SMEs up to 50 staff running payroll and performance cycles. Services drawn from the confirmed catalogue. Deliverables per tier: confirmed in writing after your Free HR Audit. Service inclusions are confirmed in writing after your Free HR Audit. Start with the free audit Enterprise Custom scoped monthly 50+ employees For larger headcount, multiple departments, and specialist needs. Organisations above 50 staff with layered management. Services drawn from the confirmed catalogue. Deliverables per tier: confirmed in writing after your Free HR Audit. Scope, inclusions, and representative allocation are confirmed in writing after your Free HR Audit. Enterprise pricing is quoted after that audit. Request a quote What the price includes, and what it does not Prices are monthly retainers priced by employee headcount, confirmed in the 2026 business brief. Package by package inclusions are confirmed in writing after your Free HR Audit. The pricing page does not invent deliverables per tier. All packages are delivered remotely unless a different arrangement is agreed. Recruitment fees, payroll tax and disbursement scope, and legal advice qualifications are confirmed in writing after your Free HR Audit. Scope guardrail No invented deliverables A pricing page that invents inclusions is worse than one that admits the gap. The audit confirms which of the fourteen services apply to your headcount, risk profile, and current documentation. Book the free audit Side by side Why Emplowise publishes HR pricing by headcount. Headcount and price are confirmed. Inclusion rows are confirmed in writing after your Free HR Audit. Package Headcount Monthly price Best for Inclusions Starter Up to 20 employees PKR 40,000 / month Startups up to 20 staff without a dedicated HR hire. Confirmed in writing after your Free HR Audit. Business Up to 50 employees PKR 75,000 / month SMEs up to 50 staff running payroll and performance cycles. Confirmed in writing after your Free HR Audit. Enterprise 50+ employees Custom (scoped monthly) Organisations above 50 staff with layered management. Confirmed in writing after your Free HR Audit. Recruitment fee inclusion, payroll tax scope, and legal advice qualifications are confirmed in writing after your Free HR Audit. Confirmed catalogue Every service that can sit inside a retainer. Packages are priced by headcount. Which of the fourteen services sit inside your retainer is confirmed in scope. Service Operating family Scope note Complete recruitment Managed HR Operations End to end hiring execution. Recruitment fee terms are confirmed in writing after your Free HR Audit. Employee onboarding Managed HR Operations Structured onboarding workflow for new team members. HR documentation and employee records Managed HR Operations Centralised personnel records and HR files. Leave and attendance management Managed HR Operations Ongoing tracking of employee leave and attendance. HR policies and SOPs Managed HR Operations Operational policies aligned to day to day management. Payroll Managed HR Operations Payroll management. Exact tax and disbursement scope is confirmed in writing after your Free HR Audit. Legal and compliance support Managed HR Operations Compliance coordination. Legal advice qualifications are confirmed in writing after your Free HR Audit. Performance support Organizational Intelligence Structured support for manager and employee performance. Employee relations and conflict support Organizational Intelligence Guidance for interdepartmental friction and workplace conflict. Organizational assessments Organizational Intelligence Review of HR gaps ahead of quarterly planning. Cadence is confirmed in writing after your Free HR Audit. Monthly HR reporting Executive HR Partnership Monthly people visibility delivered to client leadership. Ongoing HR consultation Executive HR Partnership Continuous HR guidance backed by specialist consultants. Specialist HR consultant support Executive HR Partnership Specialist input on defined people problems within agreed scope. Dedicated HR representative Executive HR Partnership Direct access to the client CEO or founder. Full time versus shared allocation is confirmed in writing after your Free HR Audit. Pick a package after the audit, not before. Book the free audit Read pricing questions Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /emplostart/  (file emplostart.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/emplostart/
+In sitemap: YES
+Title (54): Free ATS Resume Checker and 6 Career Tools | Emplowise
+Meta description (143): EmploStart is a free career app: a free ATS resume checker, mock interview practice, a profile builder, and three planning modules. No account.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/emplostart/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Free ATS Resume Checker and 6 Career Tools | Emplowise", "og:description": "EmploStart is a free career app: a free ATS resume checker, mock interview practice, a profile builder, and three planning modules. No account.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/emplostart/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Free ATS Resume Checker and 6 Career Tools | Emplowise", "twitter:description": "EmploStart is a free career app: a free ATS resume checker, mock interview practice, a profile builder, and three planning modules. No account.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 1120
+--- Headings (H1-H3) ---
+  H1: A free ATS resume checker for career pivoters and job seekers.
+  H2: Free ATS resume checker and five more free tools.
+  H3: Career Pivot Planner
+  H3: Career Reimagination Lab
+  H3: Market Assessment
+  H3: ATS Resume Analyzer
+  H3: Interview Prep
+  H3: Profile Builder
+  H2: The EMPLOWISE and START prompt library: 14 letters, 14 prompts.
+  H3: EMPLOWISE
+  H3: START
+  H2: Start with a questionnaire, your LinkedIn profile, or your CV.
+  H3: Diagnostic test and questionnaire
+  H3: LinkedIn profile and gap questions
+  H3: CV upload or PDF-paste repair
+  H2: Local by default. AI only when you choose it.
+  H3: Runs locally in your browser
+  H3: Optional AI, off until you consent
+  H2: Free because the HR work funds it.
+  H2: Hiring soon? Run the free HR audit before the first start date.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  https://diocese-trees.github.io/EmploStart/ | 'Open EmploStart'
+  https://diocese-trees.github.io/EmploStart/ | 'Open in app'
+  https://diocese-trees.github.io/EmploStart/ | 'Open the 14-prompt library'
+  /free-hr-audit/ | 'Book the free HR audit'
+  /faq/ | 'Read ATS resume questions'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Free career app A free ATS resume checker for career pivoters and job seekers. EmploStart is a permanently free career app for career pivoters and job seekers: a free ATS resume checker, mock interview practice, a profile builder, and three planning modules. It opens in your browser with no account and optional AI. Open EmploStart See the six modules Opens the standalone app in a new tab. Nothing installs, and no account is needed. 6 Free modules 0 Cost, forever 0 Accounts required Off AI by default Six modules Free ATS resume checker and five more free tools. Every module now lives in the standalone EmploStart app. This page is the map; the app is where the work happens. 01 Career Pivot Planner Transferable skills, priority gaps, bridge roles, and a 30-60-90 day plan. Open in app 02 Career Reimagination Lab Three direction archetypes, each with a concrete validation experiment. Open in app 03 Market Assessment Role readiness, evidence gaps, and fair-wage negotiation readiness. Open in app 04 ATS Resume Analyzer Score a resume against a posting, out of 100, with a fix list. Open in app 05 Interview Prep Role and level questions with structured feedback and a model answer. Open in app 06 Profile Builder Headline, summary, bullets, an ATS resume, and 14 prompts. Open in app 14 prompt letters The EMPLOWISE and START prompt library: 14 letters, 14 prompts. Every letter in the name stands for one prompt, and the 14 prompts cover the whole journey from a first skills inventory to a signed offer or a planned pivot. Each prompt has its own id, so you can come back to it later. P01–P09 EMPLOWISE Get shortlisted and into the interview P01 Letter E Evidence & Career Inventory P02 Letter M Market Value Assessment P03 Letter P Positioning & JD Semantic Decoder P04 Letter L LinkedIn & Digital Profile Architect P05 Letter O Optimized Human & ATS Resume Strategist P06 Letter W Work Proof & Portfolio Case Studies P07 Letter I Instant Parser-Safe ATS Export P08 Letter S Strategic Outreach, Referrals & Cover Letters P09 Letter E Error & Rejection Diagnostics Open the 14-prompt library P10–P14 START Ace interviews, land fair offers, and pivot P10 Letter S Structured Interview & Claim Defensibility P11 Letter T Take-Home, Case & 30-60-90 Day Pitch P12 Letter A Ask & Fair-Wage Offer Negotiation P13 Letter R Reskilling, Credentials & Scholarship ROI P14 Letter T Trajectory: Career Pivot, Reimagination & Venture Open the 14-prompt library Three ways in Start with a questionnaire, your LinkedIn profile, or your CV. The app opens with one question: how do you want to start? Each lane collects the same readiness picture from a different source and saves it to your own device. 01 Diagnostic test and questionnaire Answer 12 plain questions about your work, evidence, and targets. It takes about 2 to 3 minutes. You get one of four readiness bands, plus the prompts that fit that band. There is no pass or fail, only a starting point. 02 LinkedIn profile and gap questions Paste your LinkedIn URL and the profile text you want reviewed, then answer follow up questions. The app works only from what you paste. It does not visit LinkedIn or scrape your profile, and it asks you what is missing instead of guessing. 03 CV upload or PDF-paste repair Upload a .docx, .txt, or .md file, or paste text out of a PDF that will not read cleanly. Extraction happens in your browser. You see a parse preview and confirm it before anything is saved. Each lane writes to a candidate vault that stays in your browser. Nothing is uploaded. Shared PC mode is session only: closing the tab wipes the vault. What runs where Local by default. AI only when you choose it. The app is built so the useful work happens in your browser. Artificial intelligence is an optional extra, never the default. Runs locally in your browser All six modules work with no network call. Nothing you type is uploaded, stored on a server, or sold. No account, no payment, and no advertising inside the tools. Optional AI, off until you consent AI stays off until you turn it on and accept the consent note. Only the text you send in that moment leaves your browser. Every result has a local fallback, so the tool still works without AI. EmploStart is free because Emplowise remote HR services fund it. The pledge below is voluntary alignment, not an endorsement. Fair jobs, fair wages Free because the HR work funds it. EmploStart is a permanently free public utility. Emplowise remote HR services fund it, so there is no account, payment, or advertising inside the tools. SDG 4 Quality education: free career learning for anyone with a browser. SDG 8 Decent work and economic growth: better-prepared candidates and clearer hiring. SDG 10 Reduced inequalities: the same tools whether or not you can pay for coaching. Generations Built for career pivoters, returners, and first-job candidates of every age. Fair wages A voluntary pledge: no fabricated salary data, no pay-to-rank, and transparent benchmarking guidance. Voluntary alignment only. This is not a UN endorsement, certification, or partnership. Hiring soon? Run the free HR audit before the first start date. Book the free HR audit Read ATS resume questions Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /faq/  (file faq.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/faq/
+In sitemap: YES
+Title (53): HR Outsourcing Questions Answered Clearly | Emplowise
+Meta description (143): Answers to HR outsourcing questions about Emplowise services, pricing from PKR 40,000, the free HR audit, and EmploStart. Confirmed facts only.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/faq/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "HR Outsourcing Questions Answered Clearly | Emplowise", "og:description": "Answers to HR outsourcing questions about Emplowise services, pricing from PKR 40,000, the free HR audit, and EmploStart. Confirmed facts only.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/faq/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "HR Outsourcing Questions Answered Clearly | Emplowise", "twitter:description": "Answers to HR outsourcing questions about Emplowise services, pricing from PKR 40,000, the free HR audit, and EmploStart. Confirmed facts only.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 1065
+--- Headings (H1-H3) ---
+  H1: HR outsourcing questions answered with confirmed facts.
+  H2: HR outsourcing questions
+  H2: Pricing and packages
+  H2: The free HR audit
+  H2: EmploStart
+  H2: Ask the Emplowise assistant
+  H2: Ready for a real answer about your HR stack?
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /free-hr-audit/ | 'Book the free audit'
+  /emplostart/ | 'Open EmploStart free career tools'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Answer', 'Country', 'FAQPage', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService', 'Question']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / FAQ 21 questions, 4 categories HR outsourcing questions answered with confirmed facts . Emplowise answers HR outsourcing questions for startups and SMEs in Pakistan. EmploStart answers career questions with the same rule: confirmed facts only. Search frequently asked questions × All HR outsourcing questions Pricing and packages The free HR audit EmploStart HR outsourcing questions 6 answers What does Emplowise actually do? Emplowise runs remote HR for growing businesses. That covers recruitment, onboarding, employee records, leave and attendance, HR policies and SOPs, payroll, legal and compliance support, performance support, employee relations, monthly reporting, ongoing consultation, and organisational assessments. Is Emplowise a software product or a service? A service. Emplowise is a remote HR team backed by specialist consultants and a dedicated HR representative. The people operations dashboard and automation described on this site support the service. They are not sold as standalone proprietary software. Who is the right fit? Startups and SMEs in Pakistan that have people operations but no senior HR owner. Teams up to 20, up to 50, and above 50 each have a package. Is delivery onsite or remote? Remote HR support is the confirmed delivery model. A dedicated HR representative provides direct access to the client CEO or founder. Full time versus shared allocation is confirmed in writing after your Free HR Audit. Does Emplowise replace our leadership or board? No. Emplowise supplies structure, execution, and reporting. Decisions about the company stay with its leadership. Can you guarantee legal compliance? No. Emplowise provides legal and compliance support and coordination. Legal advice qualifications and jurisdiction coverage are confirmed in writing after your Free HR Audit, and no compliance outcome is guaranteed. Pricing and packages 5 answers How much does Emplowise cost? Starter is PKR 40,000 per month for up to 20 employees. Business is PKR 75,000 per month for up to 50 employees. Enterprise is custom priced for 50 or more employees. What is included in each package? Package inclusions are confirmed in writing after your Free HR Audit. Rather than publish invented deliverables, that conversation confirms which services apply to your headcount and risk profile. Are recruitment fees included? Recruitment is a confirmed service. Whether recruitment fees sit inside the retainer or are billed separately is confirmed in writing after your Free HR Audit. Does payroll include tax filing and salary disbursement? Payroll management is confirmed. Exact tax, statutory contribution, and disbursement scope is confirmed in writing before work starts. Is there a minimum contract length? Contract length is confirmed in writing after your Free HR Audit. Pricing is quoted as a monthly retainer. The free HR audit 5 answers What is the Free HR Audit? A structured diagnostic conversation and review. It covers payroll inputs, performance practice, and policy coverage, then returns a prioritised gap list. It is the first stage of the Emplowise method. How long does it take? The intake form takes about four minutes. The audit conversation itself is scheduled in the window you select. Assessment cadence is confirmed in writing after your Free HR Audit. What do I need to prepare? Your current headcount, how payroll is run today, where performance reviews live, and which policies exist. If any of those are missing, that is itself a finding. Is it really free? The audit is free. Any implementation work is quoted separately against a package. Where do my details go? Submissions are stored in the Emplowise database and used to prepare your audit. The form collects company, work email, phone, headcount, pain points, and your preferred window. No payment details are collected. EmploStart 5 answers Is the EmploStart actually free? Yes. All five tools are free, with no account required. They exist so early career candidates get structured feedback instead of guesswork. How does the ATS score work? Your resume text is compared against the job description. The score weights keyword coverage, resume structure, and formatting hygiene. Missing keywords are listed so you can fix them yourself. Will the resume builder pass every ATS? No tool can promise that. The builder produces a single column, plain text friendly resume with standard section headings, which is the format most parsers handle best. Do you store my resume? Resume text and job descriptions are processed for the request and are not written to the database. Interview answers are also processed without storage. Can I use the prompt library for work? Yes. Copy any prompt and adapt it. It is written for career pivoters, job seekers, and early career candidates. No answer matches that search. Try one broader word, or ask the assistant. Still stuck Ask the Emplowise assistant Grounded answers The assistant answers from the same verified data as this page. It does not guess prices, client names, or legal outcomes. Open the assistant Answers use only confirmed business data. Anything unresolved is confirmed in writing after your Free HR Audit. Ready for a real answer about your HR stack? Book the free audit Open EmploStart free career tools Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /contact/  (file contact.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/contact/
+In sitemap: YES
+Title (51): Contact Emplowise for Remote HR Support | Emplowise
+Meta description (143): Contact Emplowise for remote HR support in Pakistan. Email the team, ask your favourite AI, or book a free HR audit for a prioritised gap list.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/contact/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Contact Emplowise for Remote HR Support | Emplowise", "og:description": "Contact Emplowise for remote HR support in Pakistan. Email the team, ask your favourite AI, or book a free HR audit for a prioritised gap list.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/contact/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Contact Emplowise for Remote HR Support | Emplowise", "twitter:description": "Contact Emplowise for remote HR support in Pakistan. Email the team, ask your favourite AI, or book a free HR audit for a prioritised gap list.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 534
+--- Headings (H1-H3) ---
+  H1: Contact Emplowise without a maze of forms.
+  H2: Tell us what needs to work better.
+  H2: What happens next
+  H3: You write once
+  H3: A named lead replies
+  H3: Scope in writing
+  H2: Email us
+  H2: Socials
+  H2: Resources
+  H2: Ask your favourite GPT about Emplowise
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /free-hr-audit/ | 'Start the Free HR Audit'
+  /faq/ | 'FAQ'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- External links ---
+  https://chatgpt.com/?q=What%20is%20Emplowise%2C%20what%20remote%20HR%20services%20does%20it%20offer%20in%20Pakistan%2C%20and%20what%20are%20its%20package%20prices%3F | 'ChatGPT'
+  https://claude.ai/new?q=What%20is%20Emplowise%2C%20what%20remote%20HR%20services%20does%20it%20offer%20in%20Pakistan%2C%20and%20what%20are%20its%20package%20prices%3F | 'Claude'
+  https://gemini.google.com/app?q=What%20is%20Emplowise%2C%20what%20remote%20HR%20services%20does%20it%20offer%20in%20Pakistan%2C%20and%20what%20are%20its%20package%20prices%3F | 'Gemini'
+  https://www.perplexity.ai/search?q=What%20is%20Emplowise%2C%20what%20remote%20HR%20services%20does%20it%20offer%20in%20Pakistan%2C%20and%20what%20are%20its%20package%20prices%3F | 'Perplexity'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'Email the team'
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+  mailto:hello@emplowise.com | 'Compose email'
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Contact Us Reach the team Contact Emplowise without a maze of forms . Contact Emplowise for remote HR support in Pakistan. Ask an AI assistant, email the team, or jump straight to services, pricing, and the free HR audit. Direct line Tell us what needs to work better. One policy, a full payroll cycle, or a second opinion on your current setup. Email the team or start with the free audit, and a named lead reads every message. Email the team Start the Free HR Audit Office hours Mon–Fri, 9:00–18:00 PKT First reply Within one business day Based in Remote team, Pakistan What happens next No discovery-call maze, and no form to fill in twice. 01 You write once Send the context in a single email: team size, the gap, and the deadline you are working to. 02 A named lead replies One person answers with clarifying questions and a straight read on fit, usually within a business day. 03 Scope in writing If it fits, you get a fixed retainer, a start date, and what sits outside the scope before work begins. Email us Scope questions, hiring support, or anything the audit form does not cover. Email the team directly. hello@emplowise.com Compose email Copy email Socials LinkedIn, Facebook, Instagram, X, YouTube and WhatsApp are being set up. Every link is marked pending until it goes live. Social inboxes open with the profiles. Email stays the fastest route. Resources Our Story What We Do Where's AI Why Us EmploStart FAQ Free HR Audit Every page here is public. The audit is the only form. Ask your favourite GPT about Emplowise Each button opens a new tab with a ready-made question, so you get a second opinion before you talk to us. ChatGPT Claude Gemini Perplexity Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /free-hr-audit/  (file free-hr-audit.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/free-hr-audit/
+In sitemap: YES
+Title (58): Free HR Audit in Pakistan, Booked in 4 Minutes | Emplowise
+Meta description (149): Book a free HR audit in Pakistan. Share headcount, payroll, performance, and policy pain points in about four minutes and get a prioritised gap list.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/free-hr-audit/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Free HR Audit in Pakistan, Booked in 4 Minutes | Emplowise", "og:description": "Book a free HR audit in Pakistan. Share headcount, payroll, performance, and policy pain points in about four minutes and get a prioritised gap list.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/free-hr-audit/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Free HR Audit in Pakistan, Booked in 4 Minutes | Emplowise", "twitter:description": "Book a free HR audit in Pakistan. Share headcount, payroll, performance, and policy pain points in about four minutes and get a prioritised gap list.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 721
+--- Headings (H1-H3) ---
+  H1: A free HR audit in Pakistan, booked in four minutes.
+  H2: Who are we speaking with?
+  H2: What does the team look like?
+  H2: When should we run it?
+  H2: Review and submit.
+  H2: Your free HR audit in Pakistan: next steps.
+  H3: What the audit covers
+  H3: What to prepare
+  H3: What it is not
+  H3: Package context
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  / | 'Back to the site'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Free HR Audit Free diagnostic, about four minutes A free HR audit in Pakistan, booked in four minutes . Emplowise runs a free HR audit in Pakistan for startups and SMEs, delivered remotely. You get a structured review of payroll inputs, performance practice, and policy coverage, plus a prioritised gap list. Step 1 of 4 · Contact 01 / 04 Who are we speaking with? Work details only. No payment information is collected at any point. Contact name Company Work email Phone What does the team look like? Select every pain point that is true today. There is no wrong answer, only a diagnosis. Current headcount Select a band 1 to 10 people 11 to 20 people 21 to 50 people 51 to 100 people More than 100 people Where does it hurt most? Payroll and salary inputs Performance reviews and manager support Policies, SOPs, and handbooks Compliance and documentation Hiring and onboarding Reporting and leadership visibility Pick at least one. Up to six. Anything else we should know? (optional) When should we run it? Pick a preferred date within the next 60 days and a time window. We confirm the exact slot after reviewing the intake. Preferred date Today through 23 Jan 2027. Preferred window Select a window Morning (9:00 to 12:00) Afternoon (12:00 to 16:00) Evening (16:00 to 19:00) I agree to be contacted about this audit. Submissions are stored in the Emplowise database and used only to prepare the review. Website Review and submit. Check the details, then submit. You will get a reference number on the next screen. Back Continue Submit audit request Request received Your free HR audit in Pakistan: next steps. Keep the reference below. We review your intake, prepare a gap map, and confirm your window. EMP-000000-XXXX Preferred date To be confirmed Preferred window To be confirmed We read the intake and flag missing records, payroll gaps, and policy exposure. We confirm the audit window you selected, or propose the nearest available slot. The audit conversation ends with a prioritised gap list and a short action plan. Back to the site What the audit covers Payroll inputs, attendance, leave, and employee records. Review cadence, manager capability, and unresolved people issues. Policy coverage, SOPs, and documentation gaps. A prioritised gap list and a short action plan. What to prepare Current headcount and how the team is structured. How payroll is run today, and by whom. Where performance reviews live, if anywhere. Which policies exist and when they were last reviewed. What it is not The audit is free and diagnostic. It is not legal advice, not a compliance guarantee, and not a commitment to a package. Implementation is quoted separately. Package context Starter · Up to 20 employees · PKR 40,000 Business · Up to 50 employees · PKR 75,000 Enterprise · 50+ employees · Custom Inclusions are confirmed in writing after your Free HR Audit. Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /company-profile/  (file company-profile.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/company-profile/
+In sitemap: YES
+Title (51): Remote HR Company Profile: 2026 Edition | Emplowise
+Meta description (143): The Emplowise company profile in one document: who we serve, how we run remote HR, what the retainers cost, and who owns each part of the work.
+Meta robots: index,follow
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/company-profile/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Remote HR Company Profile: 2026 Edition | Emplowise", "og:description": "The Emplowise company profile in one document: who we serve, how we run remote HR, what the retainers cost, and who owns each part of the work.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/company-profile/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Remote HR Company Profile: 2026 Edition | Emplowise", "twitter:description": "The Emplowise company profile in one document: who we serve, how we run remote HR, what the retainers cost, and who owns each part of the work.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 1826
+--- Headings (H1-H3) ---
+  H1: A remote HR company profile written for buyers, not archives.
+  H2: What this remote HR company profile includes.
+  H2: The gap Emplowise was built to fill.
+  H3: Informal HR, run on memory.
+  H3: Enterprise HR, built for a larger company.
+  H2: Four buying situations, not four demographics.
+  H3: A second audience: early career candidates.
+  H2: What is in scope, and what is not.
+  H2: Four stages, one sequence, four documents.
+  H3: Assess
+  H3: Identify
+  H3: Improve
+  H3: Review
+  H2: Fourteen services across three pillars.
+  H3: Payroll
+  H3: Performance Management
+  H3: Policy Making
+  H2: Published retainers, billed monthly.
+  H3: Starter
+  H3: Business
+  H3: Enterprise
+  H3: Pricing notes
+  H2: Three people own the work.
+  H3: Muhammad Ali
+  H3: Abdul Hadi
+  H3: Samarah Nabil
+  H2: Three kinds of measurement, never merged.
+  H3: What Emplowise does and produces.
+  H3: What changes for the client's team.
+  H3: What belongs to the client.
+  H2: Take the profile, or start with the audit.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /downloads/Emplowise-Company-Profile-2026.docx?v=1795552040 | 'Download the company profile'
+  /contact/ | 'Talk to the team'
+  /free-hr-audit/ | 'Start the Free HR Audit'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService', 'ProfessionalService', 'WebPage', 'WebSite']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Company profile Company profile A remote HR company profile written for buyers , not archives. This is the Emplowise remote HR company profile as a single document. It covers the buying situations we serve, the four-stage method, the published retainers, and the team behind the work. Download the company profile Talk to the team Word document, 57 KB, editable On this page At a glance Market gap Who it is for Scope Method Services Pricing Leadership Measurement 01 At a glance What this remote HR company profile includes. One read for a co-founder, a board, or a bank. The short version: Emplowise installs and then runs the HR structure a growing company needs, so the founder stops being the HR helpdesk. Category HR outsourcing and managed HR services Delivery Fully remote, supported by specialist consultants Market Pakistan, remote team Clients Startups and SMEs, 5 to 100 employees Free entry point The Free HR Audit, a four-step intake reviewed by a named lead Published retainers PKR 40,000, PKR 75,000, and a custom tier above 50 employees Second audience Career pivoters and early career candidates, through EmploStart, free Contact hello@emplowise.com Every service, price, and name in this profile is drawn from the same configuration the website publishes. Nothing here is drafted separately for the document. 02 Market gap The gap Emplowise was built to fill. A Pakistani company with 10 to 100 staff has two established options, and both leave a hole in the middle. Option one Informal HR, run on memory. Cheap in cash, costly in attention. Contracts live in a folder, payroll inputs arrive by WhatsApp, leave is tracked in memory, and the first real test is a resignation or a payroll error. Nobody owns the process because owning HR was never anyone's job. Option two Enterprise HR, built for a larger company. A senior HR hire is a fixed salary plus benefits for a role that is not full time at 30 staff. A consultancy engagement often ends with a report rather than a running process. Emplowise sits between them: a monthly retainer, a named team, written scope, and execution rather than recommendations. The price is published. The method is the same for every client. The audit is free because the first useful conversation should start with the buyer's own gaps, not with a sales deck. 03 Buying situations Four buying situations, not four demographics. Emplowise sells to a moment, not to a job title. Each situation has a different first fix. Situation What the buyer says What Emplowise installs first Growth outran the paperwork "We are hiring faster than we can document." Contracts, onboarding, leave, and payroll inputs on one calendar A process failed once "We had a payroll error and no one could explain it." Records, approvals, and a written payroll rhythm The founder is the helpdesk "Every people question ends up with me." A named HR owner, policies, and manager scripts A document is needed "I need something credible to show my board or my bank." Policies, structure, and a monthly reporting pack A second audience: early career candidates. EmploStart gives career pivoters and first-job candidates the same structured thinking for free: interview practice, ATS feedback, a resume builder, a profile optimiser, and a prompt library. The broader utility adds planning modules for pivots, reimagining a career, and market assessment. No account, no cost. It is a public good and an honest demonstration of how the team thinks about people operations. 04 Scope What is in scope, and what is not. The work starts from the client's yearly goals and works backwards into HR structure, not from a policy template. If a process cannot be explained on one page, it is not finished. In scope Assessment and a written gap map Policies, SOPs, and handbooks Employee records and documentation Payroll inputs and the payroll calendar Leave and attendance Onboarding Performance support and manager coaching Employee relations and conflict support Organisational assessments Monthly HR reporting and ongoing consultation Recruitment execution Specialist consultant input and a dedicated HR representative Out of scope, stated plainly Emplowise does not act as a law firm, does not guarantee a legal or compliance outcome, does not guarantee hiring results, does not take board authority, and does not replace the client's management. Payroll tax and disbursement scope, recruitment fee treatment, legal qualifications, representative allocation, and contract terms are confirmed in writing after the Free HR Audit. Those boundaries are part of the offer, not small print. 05 Method Four stages, one sequence, four documents. Every engagement follows the same sequence, and the output of each stage is a document the client keeps. Stage 01 Assess Audit the current state. Structure, contracts, records, payroll inputs, leave practice, performance habits, and unresolved people issues. A written gap map and a prioritised list of fixes. Stage 02 Identify Separate symptoms from causes. Pin down unclear ownership, missing policy coverage, and process steps that rely on memory. A short action plan with owners and a sequence. Stage 03 Improve Install the fix. Policies, SOPs, payroll calendar, onboarding flow, manager coaching, and the reporting that follows. Running processes, not recommendations. Stage 04 Review Check what held. Monthly reporting, quarterly assessment, and a standing list of open risks. A review pack for leadership every cycle. 06 Services Fourteen services across three pillars. The automation described on the website is packaging and roadmap, not a sold software product. The services below are the confirmed work. Pillar 01 Payroll Salary inputs, leave, attendance, records, and onboarding run on one calendar instead of five spreadsheets. Payroll Leave and attendance management Employee onboarding HR documentation and employee records Pillar 02 Performance Management Review cycles, manager support, and conflict handling that produce decisions rather than another form. Performance support Employee relations and conflict support Organizational assessments Monthly HR reporting Pillar 03 Policy Making Policies and SOPs written for how the team actually works, drafted in days and reviewed on a schedule. HR policies and SOPs Legal and compliance support Ongoing HR consultation Complete recruitment Executive HR partnership. Two further capabilities sit across all three pillars: specialist HR consultant support on defined people problems, and a dedicated HR representative with direct access to the client's CEO or founder. 07 Pricing Published retainers, billed monthly. Three retainers, priced by headcount. Prices are confirmed; inclusions per tier are confirmed in writing after the audit. Starter Up to 20 employees PKR 40,000 per month Startups up to 20 staff without a dedicated HR hire. Service inclusions are confirmed in writing after your Free HR Audit. Business Up to 50 employees PKR 75,000 per month SMEs up to 50 staff running payroll and performance cycles. Service inclusions are confirmed in writing after your Free HR Audit. Enterprise 50+ employees Custom scoped monthly Organisations above 50 staff with layered management. Scope, inclusions, and representative allocation are confirmed in writing after your Free HR Audit. Enterprise pricing is quoted after that audit. Pricing notes Prices are monthly retainers priced by employee headcount, confirmed in the 2026 business brief. Package by package inclusions are confirmed in writing after your Free HR Audit. The pricing page does not invent deliverables per tier. All packages are delivered remotely unless a different arrangement is agreed. Recruitment fees, payroll tax and disbursement scope, and legal advice qualifications are confirmed in writing after your Free HR Audit. The Free HR Audit is a four-step intake of about four minutes: contact details, company and headcount, pain points across payroll, performance, policy, compliance, recruitment, and reporting, then a preferred date and slot. A named lead reviews it, prepares a gap map, and confirms the window. Start the Free HR Audit 08 Leadership Three people own the work. Strategy, marketing, and people operations each have one named owner. They answer directly. 01 Muhammad Ali Advisor Vision, governance, and operational growth. 02 Abdul Hadi Co-Founder Content Strategist & Strategic Marketer. 03 Samarah Nabil Co-Founder Senior HR Business Manager & Analyst. Samarah Nabil brings 9+ years in strategic HR, talent acquisition, and performance management, having engaged and supported 2,000+ employees, and leads Emplowise's core people operations, analytics, and organisational frameworks. Abdul Hadi works across brand narrative, growth strategy, and partnerships, alongside founding roles at Emplowise and The Creative Nexus. Muhammad Ali advises on long-term vision and governance. Portraits on the website are placeholders until the official shoot. Names, roles, and profiles are confirmed. 09 Measurement Three kinds of measurement, never merged. These are different things, measured differently. Only the first is quoted as a number today. Inputs and outputs What Emplowise does and produces. Audits completed, gap maps delivered, policies written, payroll cycles closed on the published calendar, onboarding flows installed, review packs sent. Directly observable and the only things quoted as numbers. Audience effects What changes for the client's team. Fewer people questions routed to the founder, managers with a script for difficult conversations, every employee with a record and a contract that matches reality. Stated in the client's words, not in invented percentages. Commercial outcomes What belongs to the client. Revenue, retention, cost per employee, time to hire. Reported only when the client supplies a baseline and agrees to its use. Emplowise does not publish savings it cannot evidence. No invented percentages, savings, or client names appear anywhere in this profile. Baseline metrics and verified client results are confirmed in writing after the Free HR Audit. Take the profile, or start with the audit. The document is the same content on this page, editable and ready to circulate. Download the company profile Start the Free HR Audit Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /portfolio/  (file portfolio.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/portfolio/
+In sitemap: YES
+Title (47): Remote HR Portfolio of Shipped Work | Emplowise
+Meta description (152): A remote HR portfolio that lists only shipped work: the platform, the career toolkit, the audit wizard, and the 2026 brand system, each with repo proof.
+Meta robots: index,follow
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/portfolio/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Remote HR Portfolio of Shipped Work | Emplowise", "og:description": "A remote HR portfolio that lists only shipped work: the platform, the career toolkit, the audit wizard, and the 2026 brand system, each with repo proof.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/portfolio/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Remote HR Portfolio of Shipped Work | Emplowise", "twitter:description": "A remote HR portfolio that lists only shipped work: the platform, the career toolkit, the audit wizard, and the 2026 brand system, each with repo proof.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 1544
+--- Headings (H1-H3) ---
+  H1: A remote HR portfolio that lists shipped work only.
+  H2: What this remote HR portfolio documents.
+  H2: Four shipped artifacts, each with repository proof.
+  H3: A1. Phase I web platform
+  H3: A2. EmploStart: standalone, local-first career app
+  H3: A3. Free HR Audit diagnostic
+  H3: A4. 2026 brand system
+  H2: Supporting systems, also in the repository.
+  H2: The case study standard, written down.
+  H2: Inspect the work, then start with the audit.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /downloads/Emplowise-Portfolio-2026.docx?v=1795552040 | 'Download the portfolio'
+  /contact/ | 'Ask about the work'
+  /free-hr-audit/ | 'Start the Free HR Audit'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService', 'ProfessionalService', 'WebPage', 'WebSite']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Portfolio Portfolio A remote HR portfolio that lists shipped work only . This remote HR portfolio records what Emplowise has actually shipped. Every entry names the repository evidence behind it, and no client study is used until it is cleared in writing. Download the portfolio Ask about the work Word document, 56 KB, editable On this page Evidence policy Shipped artifacts Supporting systems Case study standard Evidence policy What this remote HR portfolio documents. Proof of work that exists in the repository, described in the language a buyer would use. This is not a client list. Emplowise has no published client case studies yet, and this page does not invent any. Repo proof or nothing. A shipped artifact is listed only if the code, command, or document that produces it is in the working tree. Each entry names the file or command that proves it. Behaviour over assertion. Where a number appears, it is the count of items in the repository, such as routes, tests, or fixtures. It is never a business result. No borrowed proof. No client logo, testimonial, revenue figure, award, or market size is used. Lower-tier material from the brand guidelines never appears as evidence. Honest status. Something pre-launch is labelled pre-launch. Something planned is labelled planned. The AI automation division is explicitly pre-launch on the public site, and it is not presented here as shipped. Section A Four shipped artifacts, each with repository proof. These are the things a buyer can inspect today. Each entry names the problem it solves, the strategy behind it, what it does, and where the proof lives. A1. Phase I web platform Shipped Problem A remote HR service with published prices needs a credible public surface that works on a free host, without a server bill and without inventing proof. Strategy Build the site twice from one codebase: a Laravel application for the hosted environment, and a static export for GitHub Pages. Keep every public sentence in one config file so the two builds cannot drift. Capabilities 14 public routes rendered by one controller, with all copy in the configuration file. A strict content security policy with a single hashed inline script, self-hosted fonts, and no third-party origins. A four-step Free HR Audit wizard that validates inline, persists to SQLite, and degrades to Web3Forms or an email fallback on the static build. A grounded assistant with 18 intents that answers from the same config facts, with an optional hosted model behind it. EmploStart: six planned utility modules, with three job-readiness tools live here, mirrored in the browser and checked against PHP fixtures. Dark mode, reduced-motion support, and WCAG AA contrast on the documented pairings. Repo proof routes/web.php resources/views/ public/css/ public/js/ tests/Feature/ .github/workflows/publish-static.yml docs/STATIC_HOSTING.md A2. EmploStart: standalone, local-first career app Shipped Problem Career tools that need a live API fail on a static host, and embedding heavy tool UI in a marketing site slows both products down. Strategy Split EmploStart into its own static app repo with six local engine modules, a Non-AI default, and consent-gated AI, then link to it from a fast launcher page on the main site. Capabilities Six modules: career pivot planning, career reimagination, market assessment, ATS resume analysis, interview prep, and profile building. Deterministic local engines that make no network call, plus optional AI only after explicit consent. Engine tests in the product repo, a static Pages workflow, and a launcher that discloses what runs where. No account, no payment, and no advertising inside the tools. Repo proof EmploStart/js/engines/ EmploStart/tests/engines.test.mjs EmploStart/.github/workflows/pages.yml resources/views/pages/emplostart.blade.php config/emplowise.php A3. Free HR Audit diagnostic Shipped Problem A free audit that is really a sales form wastes the buyer's time and produces nothing usable. Strategy Ask only what the first useful conversation needs: who you are, how many people you have, which people problems are live, and when you are available. Then hand it to a named lead with a gap map. Capabilities Four steps, about four minutes, with inline validation tied to the offending step, live progress announcements, and a busy state during submit. Honeypot, throttling at 15 per minute, and server-side validation mirroring the client rules. A reference number, the preferred date and slot echoed back, and a written next step. Static build: Web3Forms when a key is configured, an inert form with an email fallback when it is not. Repo proof app/Http/Controllers/AuditRequestController.php resources/views/pages/audit.blade.php public/js/audit.js tests/Feature/SiteAndApiTest.php app/Console/Commands/ExportStatic.php A4. 2026 brand system Shipped Problem The site had grown a visual language faster than it had a written one: gradients, extra accents, and glow shadows that no document governed. Strategy Write the system down, reconcile it against the live CSS, and name each drift instead of pretending the CSS already matched. Capabilities An eight-swatch palette, three lockups, and clear-space and minimum-size rules. WCAG pairings computed for every approved combination, including the ones that fail and why. A token-by-token reconciliation that names the slate drift, the dark-only navy extension, the extra accents, the gradients, and the glow. Seven Markdown sources and seven editable Office files, generated by a verifier-checked pipeline. Repo proof docs/brand-kit/ public/css/tokens.css public/css/theme.css tools/brand-kit/ public/downloads/ Section B Supporting systems, also in the repository. These are engineering artifacts, not client work. They are listed because they are real, inspectable, and relevant to how the platform is maintained. System What it does Proof Static export pipeline Renders 14 pages, five redirect documents, a 404, a sitemap, robots, and a CSP meta tag; rewrites every asset, canonical, and download URL for a project subpath. ExportStatic.php ExportStaticTest.php CSS bundle pipeline Concatenates and minifies two bundles from 12 sources, checked in because the static host ships the public directory as is. CssBundles.php emplowise:bundle-css SEO copy audit Enforces title and description length, unique keywords, keyword placement, banned words, dashes, and the confirmed pricing facts. EmplowiseSeoAudit.php CI gate Bundle freshness, JavaScript syntax, SEO audit, the full test suite, three parity harnesses, and a keyless export smoke test. .github/workflows/ci.yml Dual deployment A public original and a private mirror with a documented one-way sync and backup tags. docs/REPO_TOPOLOGY.md Security headers A content security policy with a hashed inline bootstrap, HSTS on HTTPS only, COOP and CORP, nosniff, frame denial, and CSP reporting. SecurityHeaders.php SecurityHeadersTest.php Theme bootstrap One inline script, hashed into the CSP, so dark mode paints before first paint without allowing inline scripts. ThemeBootstrap.php Office generator Python builders and a verifier that asserts OOXML validity, a size ceiling, an embedded logo, and no raw markers. tools/brand-kit/ Section C The case study standard, written down. No client case study appears in this portfolio because none has been cleared for publication. A case study will be added only when all five conditions below are met. This is the standard, written down so a future case study cannot be assembled from memory. Written permission. The client has agreed in writing to be named, and to the specific numbers and quotes used. Baseline. The starting state is measured and dated before the engagement: headcount, payroll cycle time, open people issues, documentation coverage, or whichever metric the case study claims to move. Method. The four stages are described concretely enough that a reader can see what was installed, not just that HR was transformed. Outcome with a source. Any percentage or saving traces to a client record, not an estimate. If the client will not share the number, the case study uses a qualitative outcome in the client's own words. Limits. The case study states what did not change, how long the result held, and what the engagement did not cover. Until then, the honest proof is the shipped platform: the code, the tests, the documents, and the published prices. Anything else would be fiction with a logo attached. Inspect the work, then start with the audit. The portfolio is also a Word document, with the same entries and the same repository references. Download the portfolio Start the Free HR Audit Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /docs/  (file docs.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/docs/
+In sitemap: YES
+Title (49): Emplowise Documentation and Downloads | Emplowise
+Meta description (155): Every Emplowise document in one place: brand kit, company profile, portfolio, pitch deck, and engineering notes, with live editions and editable downloads.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/docs/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Emplowise Documentation and Downloads | Emplowise", "og:description": "Every Emplowise document in one place: brand kit, company profile, portfolio, pitch deck, and engineering notes, with live editions and editable downloads.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/docs/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Emplowise Documentation and Downloads | Emplowise", "twitter:description": "Every Emplowise document in one place: brand kit, company profile, portfolio, pitch deck, and engineering notes, with live editions and editable downloads.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 687
+--- Headings (H1-H3) ---
+  H1: Emplowise documentation, with live editions and editable downloads.
+  H2: Emplowise documentation index
+  H2: Brand system and writing rules.
+  H3: Brand Kit 2026
+  H3: Branding Guidelines 2026
+  H2: What Emplowise sells, and the proof behind it.
+  H3: Company Profile 2026
+  H3: Portfolio 2026
+  H3: Pitch Deck 2026
+  H2: The free career library candidates actually use.
+  H3: Prompt Library 2026
+  H2: How the site is built and shipped.
+  H3: Website Breakdown 2026
+  H3: Tool Stack 2026
+  H2: Notes that live with the code.
+  H2: Need a document this hub does not carry?
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /downloads/Emplowise-Brand-Kit-2026.docx?v=1795552040 | 'Download the brand kit'
+  /downloads/Emplowise-Branding-Guidelines-2026.docx?v=1795552040 | 'Download the guidelines'
+  /company-profile/ | 'Read the profile'
+  /downloads/Emplowise-Company-Profile-2026.docx?v=1795552040 | 'Download the profile'
+  /portfolio/ | 'Read the portfolio'
+  /downloads/Emplowise-Portfolio-2026.docx?v=1795552040 | 'Download the portfolio'
+  /pitch-deck/ | 'Read the deck'
+  /downloads/Emplowise-Pitch-Deck-2026.pptx?v=1795552040 | 'Download the deck'
+  /downloads/Emplowise-Start-Prompt-Library-2026.docx?v=1795552040 | 'Download the prompt library'
+  /downloads/Emplowise-Website-Breakdown-2026.docx?v=1795552040 | 'Download the breakdown'
+  /downloads/Emplowise-Tool-Stack-2026.docx?v=1795552040 | 'Download the tool stack'
+  /contact/ | 'Talk to the team'
+  /faq/ | 'Read the FAQ'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Documentation Documentation Emplowise documentation , with live editions and editable downloads. Emplowise documentation covers the brand system, the commercial profile, shipped work, the pitch deck, and the engineering notes behind the site. Read the live edition or download the editable file. On this page Brand and voice Commercial Employability Engineering Operational notes Index Emplowise documentation index Eight downloadable documents and three live editions, grouped by the question they answer. Every file is editable and every figure is traceable to the site configuration. Brand and voice Brand system and writing rules. The 2026 identity, plus the voice, evidence tiers, and naming rules every other document follows. Brand Kit 2026 Logo, colour, typography, and surface rules for every public asset. Download the brand kit Branding Guidelines 2026 Voice, evidence tiers, interface rules, and the naming lock. Download the guidelines Commercial What Emplowise sells, and the proof behind it. The company profile, the shipped-work portfolio, and the eight-slide pitch deck. Each one has a live HTML edition and an editable Office file. Company Profile 2026 Category, market, services, pricing, and scope in one profile. Read the profile Download the profile Portfolio 2026 Repo-evidenced shipped work, with no invented clients. Read the portfolio Download the portfolio Pitch Deck 2026 Eight slides, one buyer question each, with speaker notes. Read the deck Download the deck Employability The free career library candidates actually use. The EMPLOWISE x START 14-prompt library, the three intake lanes, and the local candidate vault that powers EmploStart. Prompt Library 2026 Fourteen prompts, one per letter, plus the three intake lanes and the private vault rules. Download the prompt library Engineering How the site is built and shipped. The route inventory, the module specs, the static export pipeline, and the verified toolchain. Website Breakdown 2026 Routes, partials, engines, and the static export pipeline. Download the breakdown Tool Stack 2026 Verified versions, commands, and the upgrade ledger. Download the tool stack Operational notes Notes that live with the code. Five Markdown notes stay in the repository beside the code they describe. They are versioned with the implementation, not downloaded as Office files. STATIC_HOSTING.md GitHub Pages build, Web3Forms key, and the keyless fallback. VERCEL.md Vercel static deployment, headers, redirects, and rollback. REPO_TOPOLOGY.md The original repository, the private mirror, and the export path. THEME_AND_MOTION.md Tokens, dark mode, motion timings, and reduced motion. CONTENT_EDITING_GUIDE.md Editing config copy without breaking SEO. Every download is generated from one Markdown source and checked for OOXML validity, raw Markdown tokens, and internal verification tags before it ships. Need a document this hub does not carry? Ask the team. Anything not published here is confirmed in writing rather than drafted from memory. Talk to the team Read the FAQ Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /pitch-deck/  (file pitch-deck.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/pitch-deck/
+In sitemap: NO
+Title (57): Emplowise Pitch Deck: Eight Slides for Buyers | Emplowise
+Meta description (136): The Emplowise pitch deck in eight slides: product, problem, method, pricing, market wedge, go-to-market, shipped proof, and the roadmap.
+Meta robots: noindex,follow
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/pitch-deck/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Emplowise Pitch Deck: Eight Slides for Buyers | Emplowise", "og:description": "The Emplowise pitch deck in eight slides: product, problem, method, pricing, market wedge, go-to-market, shipped proof, and the roadmap.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/pitch-deck/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Emplowise Pitch Deck: Eight Slides for Buyers | Emplowise", "twitter:description": "The Emplowise pitch deck in eight slides: product, problem, method, pricing, market wedge, go-to-market, shipped proof, and the roadmap.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 903
+--- Headings (H1-H3) ---
+  H1: The Emplowise pitch deck, eight slides, one question each.
+  H2: Remote HR structure for growing Pakistani businesses
+  H2: Informal HR breaks at thirty staff
+  H2: One method, four stages, written outputs
+  H2: Published retainers priced by headcount
+  H2: A clear wedge between DIY and enterprise
+  H2: Audit first, then EmploStart, then retainers
+  H2: Shipped platform, not promised platform
+  H3: Shipped
+  H3: Tracked
+  H2: From toolkit to retained client work
+  H2: One free intake, one named lead, one gap map.
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-primary.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /downloads/Emplowise-Pitch-Deck-2026.pptx?v=1795552040 | 'Download the deck'
+  /contact/ | 'Talk to the team'
+  /downloads/Emplowise-Pitch-Deck-2026.pptx?v=1795552040 | 'Download the deck PPTX'
+  /free-hr-audit/ | 'Start the Free HR Audit'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService', 'ProfessionalService', 'WebPage', 'WebSite']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Pitch deck Pitch deck The Emplowise pitch deck, eight slides , one question each. This is the Emplowise pitch deck as a slide-by-slide page. Each slide answers one buyer question, in the order buyers ask it, with unresolved numbers kept in the speaker notes. Download the deck Talk to the team PowerPoint file, 80 KB, 8 slides ← Prev 01 / 08 Next → Present Download the deck PPTX 01 / 08 Remote HR structure for growing Pakistani businesses What A remote HR team that installs and then runs payroll, performance and policy. Who Startups and SMEs in Pakistan, five to one hundred employees, with no senior HR hire. Why Published prices, written scope, one named team, and a free four-stage audit. 02 / 08 Informal HR breaks at thirty staff What fails Contracts, payroll inputs and leave live in memory or a spreadsheet. Who feels it The founder becomes the HR helpdesk and the escalation point. Where Pakistani startups and SMEs growing faster than their documentation. Why alternatives fail Agencies deliver reports, senior hires cost a salary, and neither runs the process. 03 / 08 One method, four stages, written outputs 01 Assess A written gap map and a prioritised list of fixes. 02 Identify A short action plan with owners and a sequence. 03 Improve Running processes, not recommendations. 04 Review A review pack for leadership every cycle. What Assess, identify, improve and review the client's people operations. How Audit the gap, name owners, install the process, then review it monthly. Why it wins Every stage ends in a document the client keeps and can run. 04 / 08 Published retainers priced by headcount Published monthly retainers by headcount Tier Capacity Price Starter Up to 20 employees PKR 40,000 per month Business Up to 50 employees PKR 75,000 per month Enterprise 50+ employees Custom scoped monthly How we earn Monthly retainers by headcount: 40,000, 75,000, or a custom enterprise quote. What tiers include Fourteen services across payroll, performance and policy, delivered remotely. Who pays, who enters free SMEs pay monthly; the audit and EmploStart are free. Why clients retain The payroll calendar and the review cycle live with Emplowise. 05 / 08 A clear wedge between DIY and enterprise Who Pakistani SMEs of five to one hundred staff with no HR owner. Where Karachi, Lahore, and Islamabad, where hiring outpaces documentation. Why now Labour expectations, payroll scrutiny, and founder bandwidth are all tightening. What wedge Take the 10-to-50 band agencies ignore and a single hire cannot serve. 06 / 08 Audit first, then EmploStart, then retainers Free HR Audit Gap map Retainer Who is the beachhead Founders introduced through the free HR audit, met by one named lead. Where we reach them The website, LinkedIn, referral partners, and the audit form. How it converts The audit produces a gap map; the map names the retainer. When phases scale Phase one is Pakistan; expansion follows proven retention. 07 / 08 Shipped platform, not promised platform Shipped What is shipped Fourteen pages, three live career tools in a six-module EmploStart plan, an audit wizard, and a grounded assistant. Who engaged No named client study yet; the proof is the shipped repository. Tracked Where tracked Outputs in the repository, effects in client words, outcomes only with baselines. 08 / 08 From toolkit to retained client work Phase I Live site, audit, EmploStart, brand system. Phase II Showcase pages, editable documents, vector logo, client proof. Phase III AI automation division, still pre-launch. What ships next Showcase pages, downloadable documents, and a vector brand system. When phases land Phase II adds the Office suite and public proof; timing stays internal. How product ties to revenue EmploStart feeds the audit; the audit feeds the retainer. Who owns execution Founders own commercial and brand; engineering owns the platform. One free intake, one named lead, one gap map. Take the deck as a PowerPoint file, or start with the audit it describes. Download the deck Start the Free HR Audit Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /terms/  (file terms.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/terms/
+In sitemap: YES
+Title (45): Terms of Service for HR Retainers | Emplowise
+Meta description (153): The terms that cover the Emplowise website, the free HR audit, and monthly remote HR retainers. Plain language, Pakistan law, scope confirmed in writing.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/terms/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Terms of Service for HR Retainers | Emplowise", "og:description": "The terms that cover the Emplowise website, the free HR audit, and monthly remote HR retainers. Plain language, Pakistan law, scope confirmed in writing.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/terms/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Terms of Service for HR Retainers | Emplowise", "twitter:description": "The terms that cover the Emplowise website, the free HR audit, and monthly remote HR retainers. Plain language, Pakistan law, scope confirmed in writing.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 816
+--- Headings (H1-H3) ---
+  H1: Terms of service, written to be read.
+  H2: Who we are
+  H2: Using this site
+  H2: The free HR audit
+  H2: Retainers and scope
+  H2: No guarantee of a business outcome
+  H2: Intellectual property
+  H2: Liability
+  H2: Governing law and changes
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /privacy/ | 'Privacy'
+  /contact/ | 'Contact us'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /terms/ | 'Terms'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Terms Legal · Terms Terms of service, written to be read . These terms cover this website, the free HR audit, and any monthly retainer with Emplowise HR Services. Where a signed scope or proposal says something different, that document wins. Last updated 22 November 2026 On this page 01 Who we are 02 Using this site 03 The free HR audit 04 Retainers and scope 05 No guarantee of a business outcome 06 Intellectual property 07 Liability 08 Governing law and changes hello@emplowise.com 01 Who we are Emplowise HR Services ("Emplowise", "we") provides remote HR support to businesses in Pakistan. You can reach us at hello@emplowise.com. These terms apply to this website and to any free HR audit or paid retainer you request from us. They do not replace a signed proposal or scope document; if the two differ, the signed document controls. 02 Using this site The site is informational. It describes our services, method, and published starting prices, but it is not legal, tax, or employment advice, and it is not a binding quote. Prices, capacities, and inclusions are indicative until they are confirmed in writing after your free HR audit. We may correct errors and change published prices at any time. 03 The free HR audit The audit is free and carries no obligation to buy. You get a structured review of the information you share and a prioritised gap list. The audit is a diagnostic conversation, not a compliance certification. It does not replace legal advice, a statutory audit, or a review of your full records. Do not send payroll data, identity documents, or other sensitive records until we agree on a secure route. 04 Retainers and scope Paid work runs on a monthly retainer. The scope, start date, named lead, and what sits outside the scope are confirmed in writing before work begins. Prices are in Pakistani rupees and exclude applicable taxes unless the proposal says otherwise. Either side may end the retainer with the notice period stated in the proposal. 05 No guarantee of a business outcome We commit to the method, the deliverables, and the response times in your scope. We cannot guarantee a hiring result, a revenue target, or a regulatory outcome, because those depend on decisions and records outside our control. 06 Intellectual property The content on this site, including text, templates, and design, belongs to Emplowise or its licensors. You may read it and share links, but you may not resell it or present it as your own. Templates and documents we create for a client are licensed to that client for internal use during and after the engagement, as set out in the proposal. 07 Liability To the extent permitted by law, Emplowise is not liable for indirect or consequential loss, lost profits, or loss of data. Our total liability for a claim is limited to the fees paid for the month in which the issue arose. Nothing in these terms limits liability that cannot be limited by law. 08 Governing law and changes These terms are governed by the laws of Pakistan, and the courts of Pakistan have jurisdiction over disputes. If we change these terms, we update the date at the top of this page. Material changes will be flagged on the site before they take effect. Free HR Audit Privacy Contact us This page is a summary written for clients, not a substitute for a signed scope.
+                    Questions go to hello@emplowise.com . Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices
+
+
+================ PAGE: /privacy/  (file privacy.html) ================
+URL: https://diocese-trees.github.io/Emplowise-Website-Phase-I/privacy/
+In sitemap: YES
+Title (45): Privacy Policy and Cookie Choices | Emplowise
+Meta description (152): Privacy at Emplowise: what we collect, how cookies work, and how to access or delete your data. No data is sold and analytics stay off until you opt in.
+Meta robots: None
+Canonical: https://diocese-trees.github.io/Emplowise-Website-Phase-I/privacy/
+Viewport: width=device-width, initial-scale=1 | theme-color: #081B3E
+OG: {"og:title": "Privacy Policy and Cookie Choices | Emplowise", "og:description": "Privacy at Emplowise: what we collect, how cookies work, and how to access or delete your data. No data is sold and analytics stay off until you opt in.", "og:type": "website", "og:url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/privacy/", "og:site_name": "Emplowise", "og:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "og:image:alt": "Emplowise logo"}
+Twitter: {"twitter:card": "summary_large_image", "twitter:title": "Privacy Policy and Cookie Choices | Emplowise", "twitter:description": "Privacy at Emplowise: what we collect, how cookies work, and how to access or delete your data. No data is sold and analytics stay off until you opt in.", "twitter:image": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/img/logo-primary.png?v=1795552040", "twitter:image:alt": "Emplowise logo"}
+Word count (body, JS-rendered excluded): 858
+--- Headings (H1-H3) ---
+  H1: Privacy, in plain language.
+  H2: What we collect
+  H2: Why we use it
+  H2: Cookies and local storage
+  H2: Sharing and processors
+  H2: How long we keep it
+  H2: Your choices and rights
+  H2: Security and international processing
+  H2: Contact and changes
+  H2: Cookies, kept light.
+--- Images (src basename | alt | w x h | loading) ---
+  logo-primary-375.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 125x32 | loading=None
+  logo-reverse-306.png | alt='Emplowise' | 306x78 | loading=lazy
+  images missing alt: 0
+--- Internal links (resolved path | anchor text) ---
+  / | ''
+  / | 'Meet Emplowise'
+  /what-we-are/ | 'Our Story'
+  /what-we-do/ | 'What We Do'
+  /what-we-are/ | 'Meet The Team'
+  /why-emplowise/ | 'Why Us'
+  /what-we-are-building/ | "Where's AI"
+  /emplostart/ | 'EmploStart'
+  /contact/ | 'Contact Us'
+  /free-hr-audit/ | 'Free HR Audit'
+  / | 'Home'
+  /terms/ | 'Terms'
+  /contact/ | 'Contact us'
+  /company-profile/ | 'Company Profile'
+  /portfolio/ | 'Portfolio'
+  /pitch-deck/ | 'Pitch Deck'
+  /docs/ | 'Documentation'
+  /faq/ | 'FAQ'
+  /privacy/ | 'Privacy'
+--- mailto/tel ---
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+  mailto:hello@emplowise.com | 'hello@emplowise.com'
+--- JSON-LD blocks: 1 ---
+  [0] @types found: ['Country', 'Offer', 'OfferCatalog', 'Organization+ProfessionalService']
+      JSON: {"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "name": "Emplowise HR Services", "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I", "description": "Remote HR for teams of 5 to 100 in Pakistan. Payroll, performance, and policy on one published monthly retainer.", "areaServed": {"@type": "Country", "name": "Pakistan"}, "knowsAbout": ["Complete recruitment", "Employee onboarding", "HR documentation and employee records", "Leave and attendance management", "HR policies and SOPs", "Payroll", "Legal and compliance support", "Performance support", "Employee relations and conflict support", "Organizational assessments", "Monthly HR reporting", "Ongoing HR consultation", "Specialist HR consultant support", "Dedicated HR representative"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Emplowise monthly retainers", "itemListElement": [{"@type": "Offer", "name": "Starter", "description": "Up to 20 employees. For a small team that needs the basics done properly.", "priceCurrency": "PKR", "price": 40000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Business", "description": "Up to 50 employees. For a growing company with real process volume.", "priceCurrency": "PKR", "price": 75000, "url": "https://diocese-trees.github.io/Emplowise-Website-Phase-I/why-emplowise"}, {"@type": "Offer", "name": "Enterprise", "description": "50+ employees. For larger headcou
+--- BODY TEXT (full) ---
+Skip to content Meet Emplowise Company Our Story What We Do Meet The Team Why Us Where's AI EmploStart Contact Us Dark mode Free HR Audit Home / Privacy Legal · Privacy Privacy, in plain language . This policy explains what Emplowise collects when you use this site, book a free HR audit, or email the team, and the choices you have. It covers cookies and the tools we use to run the site. Last updated 22 November 2026 On this page 01 What we collect 02 Why we use it 03 Cookies and local storage 04 Sharing and processors 05 How long we keep it 06 Your choices and rights 07 Security and international processing 08 Contact and changes hello@emplowise.com 01 What we collect When you book a free HR audit, we collect the details you enter: your name, work email, company, headcount band, the areas you want reviewed, and any notes you add. If you email us, we keep that message and our reply. Like most sites, our host may record basic technical information such as the requested page, browser type, and IP address in server logs. We use this to keep the site working and secure. 02 Why we use it We use audit responses to prepare and deliver the audit, to reply to you, and to keep a record of what was agreed. We use technical logs to operate and protect the site. We do not sell personal data, and we do not use it for advertising. Analytics and marketing storage stay off until you turn them on in the cookie panel. 03 Cookies and local storage One essential preference stores your cookie choice for up to 180 days. It is kept in a first-party cookie and in local storage so the panel does not ask again on every page. If you allow analytics or marketing, the site may load the relevant measurement later. No third-party analytics or advertising tags are installed today. You can change or withdraw your choice through the cookie settings link in the footer. 04 Sharing and processors We share data only with providers that help us run the site and reply to you, such as hosting and email. They act on our instructions and are not allowed to use your data for their own marketing. We may disclose information if the law requires it, or to protect the rights and safety of Emplowise, our clients, or others. 05 How long we keep it Audit responses are kept while we assess fit and for a reasonable period afterwards so we can answer follow-up questions. Email is kept for as long as needed to manage the relationship. You can ask us to delete your audit response or email at any time, unless we are required to keep it for a legal or accounting reason. 06 Your choices and rights You can ask for a copy of the personal data we hold about you, ask us to correct it, or ask us to delete it. You can also withdraw consent for optional cookies at any time. Email hello@emplowise.com with the request. We may ask a clarifying question to make sure we are dealing with the right person. 07 Security and international processing We use HTTPS, access controls, and reputable hosting providers. No method of transmission or storage is perfectly secure, so please do not send sensitive records until we agree on a secure route. Our providers may process data outside Pakistan. Where that happens, we rely on the provider's contractual safeguards and keep the set of providers small. 08 Contact and changes Questions about this policy can go to hello@emplowise.com. If we change the policy, we update the date at the top of this page. Free HR Audit Terms Contact us This page is a summary written for clients, not a substitute for a signed scope.
+                    Questions go to hello@emplowise.com . Emplowise is the HR partner for growing businesses in Pakistan. We run remote HR for teams of 5 to 100 and start every engagement with a free audit and a written gap list. Free HR Audit Socials Company Meet Emplowise Our Story What We Do Meet The Team Why Us Company Profile Portfolio Where's AI Resources EmploStart Pitch Deck Documentation FAQ Contact Us Free HR Audit Start here hello@emplowise.com © 2026 Emplowise HR Services. All rights reserved. People analytics without bias, so CEOs can set new standards. Terms Privacy Cookie settings E Emplowise assistant Grounded answers only Start over × hey. I am the Emplowise assistant. Ask about packages, what we run, or the free audit. Prices stay exact, guesses do not happen. Pricing Services Free audit EmploStart Your message Send Verified data only. Scope details open in the free audit. Ask Emplowise Cookies, kept light. One small cookie stores this choice. Analytics and marketing stay off until you turn them on. Accept all Essential only Manage Essential Remembers this choice and keeps the site working. Always on. Analytics Anonymous page counts, so we know what to improve. Marketing Measures campaign links. Off by default. No analytics or marketing tags load today. These switches decide what may load later. Save choices

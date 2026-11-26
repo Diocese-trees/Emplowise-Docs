@@ -38,6 +38,8 @@ START, sourced from `EmploStart/data/prompt-library.json`.
 
 ## Internal reports
 
+The [2026-11-26 SEO, AEO, GEO and conversion audit](docs/reports/seo-audit-20261126/README.md) contains all eight phase documents, the running issues log, preserved crawl evidence and an explicit coverage/limitations matrix. It is documentation only, not a deployed website rewrite.
+
 ```bash
 make report        # token check + rebuild reports/*.html and the A4 PDF
 make report-check  # the same, then the Playwright acceptance pass
