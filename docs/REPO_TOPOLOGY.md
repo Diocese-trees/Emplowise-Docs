@@ -51,6 +51,15 @@ Feature suite, and renders a keyless static export with `index.html`, `404.html`
 the audit form and the CSP meta asserted. It has read-only permissions; only
 `publish-static.yml` writes `gh-pages`.
 
+## Backups
+
+Every release round is captured as a bare mirror plus an `--all` bundle per
+repository, checksummed, verified with `git bundle verify` and restore-tested
+by cloning the bundle. All branches and tags are also pushed to private
+`*-shadow-YYYYMMDD` repositories so the copies outlive the workspace. The
+procedure, the restore commands and the 2026-11-26 release record live in
+[`BACKUP_AND_RESTORE.md`](BACKUP_AND_RESTORE.md).
+
 ## Keeping the copy in sync
 
 `.github/workflows/sync-from-upstream.yml` runs **every two hours at :23** and on
