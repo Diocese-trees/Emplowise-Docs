@@ -37,7 +37,8 @@ mirror directory surviving.
 
 | Path | Date | Contents |
 | --- | --- | --- |
-| `/data/backups/20261126-seo-phase8/` | 2026-11-26 | Current round: three mirrors, three bundles, `MANIFEST.txt`, `MANIFEST.json`, source snapshots of the website and Docs working trees |
+| `/data/backups/20261127-ux/` | 2026-11-27 | Current round: three mirrors, three bundles, `MANIFEST.txt`, `MANIFEST.json`, captioned source snapshots of the website and Docs working trees |
+| `/data/backups/20261126-seo-phase8/` | 2026-11-26 | Three mirrors, three bundles, `MANIFEST.txt`, `MANIFEST.json`, source snapshots of the website and Docs working trees |
 | `/data/backups/20261126-shadow/` | 2026-11-26 | Earlier round from the same day: bundles plus the pre-audit archive zip |
 | `/data/backups/20261124-vercel/` | 2026-11-24 | Previous round: three bundles, Vercel config zip, manifest |
 | `/data/backups/20261123-exec-report/` | 2026-11-23 | Executive report inputs |
@@ -53,9 +54,14 @@ GitHub account:
 
 | Shadow repository | Mirrors |
 | --- | --- |
-| `Diocese-trees/Emplowise-Website-Phase-I-shadow-20261126` | website: 28 branches, 16 tags |
+| `Diocese-trees/Emplowise-Website-Phase-I-shadow-20261126` | website: 29 branches, 16 tags |
 | `Diocese-trees/Emplowise-Docs-shadow-20261126` | Docs: 2 branches, 1 tag |
 | `Diocese-trees/EmploStart-shadow-20261126` | EmploStart: 1 branch, 1 tag |
+
+The three shadow repositories were created for the 2026-11-26 release and are
+reused each round: they are force-refreshed to the current heads rather than a
+new set being created per date. The 2026-11-27 round added the
+`ux-score-lift-20261127` branch to the website shadow (28 → 29 branches).
 
 Push policy, deliberately narrow:
 
@@ -130,6 +136,45 @@ git push origin main
 
 `publish-static.yml` then rebuilds `gh-pages`, which is the same path a normal
 merge takes.
+
+## Release of 2026-11-27
+
+The UX score-lift was merged with a fast-forward, so `main` has no merge commit
+and history stays linear. No pull request was opened this round; the working
+branch and `main` were pushed directly.
+
+| Step | Result |
+| --- | --- |
+| Branch | `ux-score-lift-20261127` at `dc8e72e` |
+| Merge | `main` 26834d7 → dc8e72e, fast-forward, no merge commit |
+| CI on `main` | run 45934428347, passed |
+| Publish static site | run 45934428376, passed; `gh-pages` updated |
+| Publish Vercel branch | run 45934428228, skipped; gate variable off |
+| Deploy to Vercel | run 45934428227, skipped; gate variable off |
+
+Gate results at `dc8e72e`: `php artisan emplowise:seo-audit` 15/15,
+`php artisan test` 57 passed (902 assertions), static export 15 pages, the
+new `emplowise:ux-gate` 185/185 across 15 routes x 6 viewports, and a
+deterministic CSS bundle. Brand kit, colours, fonts and logos are unchanged.
+
+Backup round `/data/backups/20261127-ux/`: website mirror 29 branches and
+16 tags, Docs 2 branches and 1 tag, EmploStart 1 branch and 1 tag, one bundle
+per repository, `git bundle verify` clean, restore-check `HEAD` equal to the
+mirror, sizes and SHA-256 in `MANIFEST.txt` and `MANIFEST.json`. The three
+private shadow repositories above were force-refreshed to the same heads.
+
+### Rollback
+
+Reverting is a normal revert commit; do not rewrite published history:
+
+```bash
+cd /data/emplowise
+git revert --no-edit dc8e72e
+git push origin main
+```
+
+That restores the 26834d7 copy and retriggers CI and `gh-pages`. A full offline
+restore from the bundle above is the last resort and does not require GitHub.
 
 ## Release of 2026-11-26
 
